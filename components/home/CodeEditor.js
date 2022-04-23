@@ -8,32 +8,32 @@ export default function CodeEditor() {
       </div>
       <pre className='pt-4 language-js bottom-0' style={{height: 'calc(100% - 32px)', overflowX: 'scroll'}}>
         <code className='language-js'>
-          <span className='token keyword'>import</span> <span className='token tag'>Header</span> <span className='token keyword'>from</span> <span className='token string'>"../components/Header"</span>;
+          <span className='token keyword'>import</span> <span className='token tag'>Header</span> <span className='token keyword'>from</span> <span className='token string'>&quot;../components/Header&quot;</span>;
           <br/>
-          <span className='token keyword'>import</span> <span className='token tag'>BlogTitle</span> <span className='token keyword'>from</span> <span className='token string'>"../components/BlogTitle"</span>;
+          <span className='token keyword'>import</span> <span className='token tag'>BlogTitle</span> <span className='token keyword'>from</span> <span className='token string'>&quot;../components/BlogTitle&quot;</span>;
           <br/>
-          <span className='token keyword'>import</span> <span className='token tag'>Footer</span> <span className='token keyword'>from</span> <span className='token string'>"../components/Footer"</span>;
-          <br/>
-          <br/>
-          <span className="token keyword" children={"<"} />
-          <span className="token tag" children={"Header"} />
-          <span className="token class-name" children={" title"} />
-          <span className="token keyword" children={"="} />
-          <span className="token string">"<Twemoji emoji="🚀" /> My Blog Title"</span>
-          <span className="token keyword" children={" />"} />
+          <span className='token keyword'>import</span> <span className='token tag'>Footer</span> <span className='token keyword'>from</span> <span className='token string'>&quot;../components/Footer&quot;</span>;
           <br/>
           <br/>
-          <span className="token tag" children={"## Hello World!"} /> <Twemoji emoji="👋" />
+          <span className="token keyword">{"<"}</span>
+          <span className="token tag" >{"Header"}</span>
+          <span className="token class-name" >{" title"}</span>
+          <span className="token keyword" >{"="}</span>
+          <span className="token string">&quot;<Twemoji emoji="📖" /> My Blog Title&quot;</span>
+          <span className="token keyword" >{" />"}</span>
+          <br/>
+          <br/>
+          <span className="token tag">{"## Hello World!"} <Twemoji emoji="👋" /></span>
           <br/>
           This is the main page content.
           <br/>
           <br/>
-          <span className="token keyword" children={"<"} />
-          <span className="token tag" children={"Footer"} />
-          <span className="token class-name" children={" content"} />
-          <span className="token keyword" children={"="} />
-          <span className="token string">"Code with <Twemoji emoji="❤️" /> by @manuanish"</span>
-          <span className="token keyword" children={" />"} />
+          <span className="token keyword" >{"<"}</span>
+          <span className="token tag" >{"Footer"}</span>
+          <span className="token class-name" >{" content"}</span>
+          <span className="token keyword" >{"="}</span>
+          <span className="token string">&quot;Code with <Twemoji emoji="❤️" /> by @manuanish&quot;</span>
+          <span className="token keyword" >{" />"}</span>
         </code>
       </pre>
     </div>

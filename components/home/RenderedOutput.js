@@ -9,7 +9,7 @@ export default function RenderedOutput() {
       <div className="bg-slate-800 rounded-lg">
         <div className="flex flex-row p-4 border-slate-600 bg-slate-700" style={{borderRadius: '8px 8px 0px 0px'}}>
           <div className='font-bold flex-grow-1'>
-            <span><Twemoji emoji="🚀" />&nbsp;&nbsp;My Blog Title</span>
+            <span><Twemoji emoji="📖" />&nbsp;&nbsp;My Blog Title</span>
           </div>
         </div>
         <div className="p-10">
