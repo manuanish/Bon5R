@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Twemoji from '../components/Twemoji';
-import Header from '../components/Home/Header';
-import MainTitle from '../components/Home/MainTitle';
-import CodeEditor from '../components/Home/CodeEditor';
-import RenderedOutput from '../components/Home/RenderedOutput';
-import Slide1 from '../components/Home/Slide1';
+import Header from '../components/home/Header';
+import MainTitle from '../components/home/MainTitle';
+import CodeEditor from '../components/home/CodeEditor';
+import RenderedOutput from '../components/home/RenderedOutput';
+import Slide1 from '../components/home/Slide1';
 
 export default function Home() {
   return (
