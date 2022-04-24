@@ -1,6 +1,6 @@
 {
   "name": "create-bon5r-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "description": "Light a Bon5R - Create static, blog-aware websites with pure MDX.",
   "bin": "./bin/cli.js",
