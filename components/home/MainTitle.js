@@ -8,7 +8,7 @@ export default function MainTitle(){
         A scalable framework allowing you to create beautiful, responsive websites without ever touching <code className="font-mono font-medium text-orange-500 ">HTML</code>, <code className="font-mono font-medium text-orange-500 ">CSS</code> or <code className="font-mono font-medium text-orange-500 ">JS</code>.
       </p>
       <div className="mt-6 sm:mt-10 flex justify-center text-sm p-5 flex-row gap-5">
-        <a className="bg-slate-900 hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto   bg-orange-500  highlight-white/20" href="/docs/installation">
+        <a className="bg-slate-900 hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto   bg-orange-500  highlight-white/20" href="/docs/getting-started/installation">
           Get Started
         </a>
         <a className="bg-slate-600 hover:bg-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto   highlight-white/20 " href="https://github.com/manuanish/bon5r">

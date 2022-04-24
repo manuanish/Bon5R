@@ -1,4 +1,4 @@
-import Twemoji from '../Twemoji';
+import Twemoji from '@components/Twemoji';
 
 export default function CodeEditor() {
   return (
