@@ -16,6 +16,8 @@ export default function Sidebar(props){
         <SidebarButton pagePath={props.href} href="/docs/getting-started/installation" pageTitle="Installation"/>
         <SidebarButton pagePath={props.href} href="/docs/getting-started/next-steps" pageTitle="Next Steps"/>
         <Section title="Customization"/>
+        <SidebarButton pagePath={props.href} href="/docs/customization/editing-components" pageTitle="Editing Components"/>
+        <SidebarButton pagePath={props.href} href="/docs/customization/adding-components" pageTitle="Adding Components"/>
       </div>
     </div>
   )
