@@ -1,3 +1,45 @@
 import Sidebar from "@components/docs/Sidebar";
+import MDXDocs from "@components/docs/MDXDocs";
+import Author from "@components/docs/Author";
+import DocsImage from "@components/docs/DocsImage";
+import NextPage from "@components/docs/NextPage";
+import PageTitle from "@components/docs/PageTitle";
+
+<PageTitle title="Next Steps"/>
 
 <Sidebar />
+<MDXDocs>
+# Next Steps
+<Author author="Manu Anish" displayName="manuanish" date="24/5/22"/>
+<br/>
+### Prerequisites
+To follow the below, you must have already have an initialized app using `create-bon5r-app`. For more instructions, refer to the [Installation](/docs/getting-started/installation) page.
+
+## Editing Pages & Directories
+We can now go to the directory `pages/index.mdx` and start editing it. The project is built using [Next.js](https://nextjs.org)
+so the file structure is similar. For more information, refer to the documentation at Next.js.
+### Default Directory
+```
+pages
+  |- index.mdx
+  |- hello-world.mdx
+```
+<br/>
+The `index.mdx` file will be rendered at the URL [`localhost:3000`](http://localhost:3000)
+whereas the `hello-world.mdx` page will be rendered at the URL [`localhost:3000/hello-world`](http://localhost:3000/hello-world).
+<br/>
+### Folder Example
+If I were to create a new folder, e.g:
+```
+pages
+  |- index.mdx
+  |- hello-world.mdx
+  |- posts
+       |- index.mdx
+       |- post-1.mdx
+```
+<br/>
+The file `posts/index.mdx` would be rendered at [`localhost:3000/posts`](http://localhost:3000/posts)
+and the file `posts/post-1.mdx` would be rendered at the URL [`localhost:3000/posts/post-1`](http://localhost:3000/posts/post-1)
+<NextPage nextPage="Next Steps" previousPage="Installation" prevHref="/docs/getting-started/installation" nextHref="/docs/getting-started/next-steps"/>
+</MDXDocs>

@@ -4,6 +4,7 @@
      "paths": {
        "@components/*": ["components/*"],
        "@pages/*": ["pages/*"],
+       "@images/*": ["public/images/docs/*"],
      }
    }
  }

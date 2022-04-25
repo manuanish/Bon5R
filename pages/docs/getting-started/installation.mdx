@@ -1,3 +1,33 @@
 import Sidebar from "@components/docs/Sidebar";
+import MDXDocs from "@components/docs/MDXDocs";
+import Author from "@components/docs/Author";
+import DocsImage from "@components/docs/DocsImage";
+import NextPage from "@components/docs/NextPage";
+import PageTitle from "@components/docs/PageTitle";
+
+<PageTitle title="Installation"/>
 
 <Sidebar />
+<MDXDocs>
+# Installation
+<Author author="Manu Anish" displayName="manuanish" date="24/4/22"/>
+<br/>
+### Prerequisites
+For the installation to fully complete, your system will need to have [Node.js](https://nodejs.org/en/) version 16+
+and you will need to have [NPM](https://www.npmjs.com/) version 8+. We reccomend using `yarn` but it is also
+possible to run the installtion using `npm`.
+
+## Using Create-Bon5R-App
+To create a new application we can simply run the command
+```
+yarn create-bon5r-app my-app
+```
+<br/>
+And the CLI will automatically generate a app called `my-app` in the directory the command was run.
+We can now run the command `cd my-app` and then run `yarn dev` to run the server
+in development mode. Now when we go to the URL `http://localhost:3000` we can view the website. It should appear as shown below:
+<br />
+<DocsImage src="/images/docs/create-bon5r-app-demo.png" width="2880" height="1630"/>
+<br/>
+<NextPage nextPage="Next Steps" previousPage="Installation" prevHref="/docs/getting-started/installation" nextHref="/docs/getting-started/next-steps"/>
+</MDXDocs>

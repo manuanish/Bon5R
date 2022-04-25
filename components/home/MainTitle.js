@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function MainTitle(){
   return (
     <div className="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32 bg-transparent pb-20">
@@ -8,12 +10,16 @@ export default function MainTitle(){
         A scalable framework allowing you to create beautiful, responsive websites without ever touching <code className="font-mono font-medium text-orange-500 ">HTML</code>, <code className="font-mono font-medium text-orange-500 ">CSS</code> or <code className="font-mono font-medium text-orange-500 ">JS</code>.
       </p>
       <div className="mt-6 sm:mt-10 flex justify-center text-sm p-5 flex-row gap-5">
-        <a className="bg-slate-900 hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto   bg-orange-500  highlight-white/20" href="/docs/getting-started/installation">
+      <div className="bg-slate-900 hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto   bg-orange-500  highlight-white/20">
+        <Link href="/docs/getting-started/installation" passHref={false}>
           Get Started
-        </a>
-        <a className="bg-slate-600 hover:bg-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto   highlight-white/20 " href="https://github.com/manuanish/bon5r">
+        </Link>
+      </div>
+      <div className="bg-slate-600 hover:bg-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto   highlight-white/20 ">
+        <Link href="https://github.com/manuanish/bon5r" passHref={false}>
           Github Repo
-        </a>
+        </Link>
+      </div>
       </div>
     </div>
   )

@@ -9,7 +9,7 @@ module.exports = {
       'sans' : ['Inter'],
       'display' : ['Inter'],
       'body' : ['Inter']
-    }
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),

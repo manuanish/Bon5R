@@ -42,3 +42,17 @@ code {
   height: 1em;
   vertical-align: -0.125em;
 }
+
+.markdown-body {
+  font-family: Inter;
+  line-height: 1.8;
+}
+
+.markdown-body a {
+  color: #FB923C;
+}
+
+
+.markdown-body pre {
+  @apply bg-slate-800
+}
