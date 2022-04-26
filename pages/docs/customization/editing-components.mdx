@@ -4,6 +4,7 @@ import Author from "@components/docs/Author";
 import DocsImage from "@components/docs/DocsImage";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
+import TitleCode from "@components/docs/TitleCode";
 
 <PageTitle title="Editing Components"/>
 
@@ -17,10 +18,9 @@ To do this we can navigate to the `components` folder and make changes to any of
 #### Customizing the `Header` Component
 Here is the default `Header` component:
 <br/>
+<TitleCode title="components/Header.js">
 ```jsx
-import * as React from 'react';
-
-function Header(){
+export default function Header(){
   return (
     <div>
       <div className="fixed bg-white top-0 left-0 p-8 w-full z-50 border-b">
@@ -33,17 +33,16 @@ function Header(){
     </div>
   );
 }
-
-export default Header;
 ```
+</TitleCode>
 <br/>
-Let's say we wanted allow the user to have a different title for every page. Using the `props` input we can create a input for the user so that for every call
-we would require a input to have a header.
+Let's say we want to have a different title for each page, (for instance the title of the a blog post).
+Using the `props` parameter we can create a input for the user so that for every usage
+the component would reaquire a title.
 <br/>
+<TitleCode title="components/Header.js">
 ```jsx
-import * as React from 'react';
-
-function Header(props){
+export default function Header(props){
   return (
     <div>
       <div className="fixed bg-white top-0 left-0 p-8 w-full z-50 border-b">
@@ -56,16 +55,18 @@ function Header(props){
     </div>
   );
 }
-
-export default Header;
 ```
+</TitleCode>
 
-Now the user can use the component in pages like so:
+### Usage
+Now the user can use the customized component in pages like so:
 
+<TitleCode title="pages/editing-components.mdx">
 ```md
-import Header from '@components/Header';
+import Header from "@components/Header";
 
-<Header title="🔥 My Custom Header"/>
+<Header title="🔥 My Custom Header" />
 ```
+</TitleCode>
 <NextPage nextPage="Adding Components" previousPage="Next Steps" prevHref="/docs/getting-started/next-steps" nextHref="/docs/customization/adding-components"/>
 </MDXDocs>

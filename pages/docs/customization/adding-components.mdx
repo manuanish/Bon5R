@@ -4,14 +4,79 @@ import Author from "@components/docs/Author";
 import DocsImage from "@components/docs/DocsImage";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
+import TitleCode from "@components/docs/TitleCode";
+import ButtonDemo from "@components/docs/ButtonDemo";
 
-<PageTitle title="Editing Components"/>
+<PageTitle title="Adding Components"/>
 
 <Sidebar />
 <MDXDocs>
 # Adding Components
 <Author author="Manu Anish" displayName="manuanish" date="24/5/22"/>
 <br/>
+Let's say that we wanted to create a component that could be used. In this we will show a quick example on
+how to do this by create a `Button` component.
+
+### Creating a `Button` Component
+We can navigate to the `components` directory and create a new file called `Button.js`. We can start with the default
+export function
+
+<TitleCode title="components/Button.js">
+```jsx
+export default function Button(){
+  return (
+    <div>
+    </div>
+  );
+}
+```
+</TitleCode>
+Now we can add JSX code to create the component:
+
+<TitleCode title="components/Button.js">
+```jsx
+export default function Button(props){
+  return (
+    <div className="flex justify-center">
+      <button className="bg-slate-800 hover:bg-slate-700 p-4 rounded-md">{props.name}</button>
+    </div>
+  );
+}
+```
+</TitleCode>
+
+### Usage
+Now we can use the custom component in our code like so:
+
+```md
+import Button from "@components/Button";
+
+<Button name="Click me! 👊"/>
+```
+
+This will give us the following:
+<br/>
+<ButtonDemo name="Click me! 👊" />
+<br/>
+### Component Functionality
+Since the component is written in JSX, we can add functions to the button when it is pressed. Take for example:
+<TitleCode title="components/Button.js">
+```jsx
+export default function Button(props){
+  const buttonClicked = () => {
+    console.log("Clicked!")
+    // Or anything else...
+  }
+
+  return (
+    <div className="flex justify-center" onClick={buttonClicked}>
+      <button className="bg-slate-800 hover:bg-slate-700 p-4 rounded-md">{props.name}</button>
+    </div>
+  );
+}
+```
+We can use this to, say, create a like button underneath a blog post.
+</TitleCode>
 
 <NextPage nextPage="Adding Components" previousPage="Editing Components" prevHref="/docs/customization/editing-components" nextHref="/docs/customization/adding-components"/>
 </MDXDocs>
