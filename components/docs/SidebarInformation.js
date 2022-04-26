@@ -2,7 +2,7 @@ import Twemoji from '@components/Twemoji'
 
 export default function SidebarInformation(){
   return (
-    <div className="mt-8 mb-10 border border-slate-700 bg-slate-800 p-4 rounded-lg">
+    <div className="relative mt-8 mb-10 border border-slate-700 bg-slate-800 p-4 rounded-lg">
       <div className="font-bold text-slate-200">
         Found a typo?
       </div>
