@@ -5,16 +5,16 @@ import * as React from 'react';
 export default function DocsAd(){
   const [visibility, setVisibility] = React.useState('visible')
   const [opacity, setOpacity] = React.useState(1)
-  const [margin, setMargin] = React.useState(20)
+  const [margin, setMargin] = React.useState(100)
 
   const onButtonClick = (event) => {
     event.preventDefault();
     // setVisibility('hidden')
     setOpacity(0)
-    setMargin(15)
+    setMargin(0)
   }
   return (
-    <div className={`bg-slate-800 mb-${margin} p-4 justify-center flex duration-200`} style={{marginLeft: -100, marginRight: 0, width: 'calc(100% + 180px)', visibility: visibility, opacity: opacity}}>
+    <div className={`bg-slate-800 p-4 justify-center flex duration-200`} style={{marginLeft: -100, marginRight: 0, width: 'calc(100% + 180px)', visibility: visibility, opacity: opacity, marginBottom: margin}}>
       <div className="grow">
         <div className="text-center">
           Try Bon5R in your browser! &nbsp;<Link href='/playground'>{"Visit the playground ->"}</Link>
