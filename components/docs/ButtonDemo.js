@@ -4,7 +4,7 @@ export default function Button(props){
   }
   return (
     <div className="flex justify-center">
-      <button className="bg-slate-800 hover:bg-slate-700 p-4 rounded-md" onClick={buttonClicked}>{props.name}</button>
+      <button className="bg-slate-800 hover:bg-slate-700 p-4 rounded-md " onClick={buttonClicked}>{props.name}</button>
     </div>
   );
 }

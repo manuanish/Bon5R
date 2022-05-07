@@ -6,7 +6,7 @@ export default function SidebarButton(props) {
   if (router.pathname == props.href) {
     return (
       <Link href={props.href} className="w-full p-4" passHref={true}>
-        <button className="block border-l  w-full pb-2 pt-2 pl-5 text-left -ml-px border-current font-semibold text-orange-400">
+        <button className="block border-l w-full pb-2 pt-2 pl-5 text-left -ml-px border-current font-semibold text-orange-400">
           {props.pageTitle}
         </button>
       </Link>

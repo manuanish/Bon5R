@@ -18,6 +18,7 @@ body {
     linear-gradient(to right, #1E293B 1px, transparent 1px),
     linear-gradient(to bottom, #1E293B 1px, transparent 1px);
   overflow: scroll;
+  transition-duration: 0.25s;
 }
 
 pre {

@@ -4,13 +4,15 @@
 import withMDX from '@next/mdx';
 import remarkPrism from 'remark-prism';
 import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 // Render markdown with the plugins
 const NextConfig = withMDX({
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [remarkGfm, remarkPrism],
-    rehypePlugins: [],
+    remarkPlugins: [remarkGfm, remarkPrism, remarkMath],
+    rehypePlugins: [rehypeKatex],
   },
 })
 
