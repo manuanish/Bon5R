@@ -9,7 +9,7 @@ import Link from 'next/link';
 export default function Sidebar(props){
   return (
     <div className="bg-slate-900 z-50 top-0 bottom-0">
-      <div className="sidebar w-[300px] text-white fixed p-10 pt-0 border-r border-r-slate-800 top-0 bottom-0 overflow-y-scroll">
+      <div id="documentationSidebar" className="sidebar w-[300px] text-white fixed p-10 pt-0 border-r border-r-slate-800 top-0 bottom-0 overflow-y-scroll">
         <div className="fixed ml-[-20px] bg-transparent bg-gradient-to-b from-slate-900 via-slate-900 to-transparent">
           <SidebarLogo />
           <SidebarInformation />

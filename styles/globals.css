@@ -57,3 +57,7 @@ code {
 .markdown-body pre {
   @apply bg-slate-800
 }
+
+textarea:focus, input:focus{
+    outline: none;
+}
