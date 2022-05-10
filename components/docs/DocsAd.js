@@ -9,10 +9,18 @@ export default function DocsAd() {
 
   const onButtonClick = (event) => {
     event.preventDefault();
-    // setVisibility('hidden')
     setOpacity(0);
     setMargin(0);
   };
+
+  React.useEffect(() => {
+    // Update the document title using the browser API
+    if (window.screen.width < 500) {
+      setOpacity(0);
+      setMargin(0);
+    }
+  });
+
   return (
     <div
       className={`bg-slate-800 p-4 justify-center flex duration-200`}

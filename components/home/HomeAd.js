@@ -5,13 +5,13 @@ import * as React from "react";
 export default function HomeAd() {
   return (
     <div
-      className={`relative bg-slate-800 p-4 justify-center flex duration-200 text-white`}
+      className={`relative bg-slate-800 p-4 justify-center flex duration-200 text-white flex-col lg:flex-row md:flex-row`}
     >
-      <div className="grow">
-        <div className="text-center">
-          Try Bon5R in your browser! &nbsp;
-          <Link href="/playground">{"Visit the playground ->"}</Link>
-        </div>
+      <div className="text-center lg:text-left md:text-left">
+        Try Bon5R in your browser! &nbsp;
+      </div>
+      <div className="text-center lg:text-left md:text-left">
+        <Link href="/playground">{"Visit the playground ->"}</Link>
       </div>
     </div>
   );
