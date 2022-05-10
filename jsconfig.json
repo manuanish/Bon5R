@@ -1,10 +1,11 @@
 {
-   "compilerOptions": {
-     "baseUrl": ".",
-     "paths": {
-       "@components/*": ["components/*"],
-       "@pages/*": ["pages/*"],
-       "@images/*": ["public/images/docs/*"],
-     }
-   }
- }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@images/*": ["public/images/docs/*"],
+      "@styles/*": ["styles/*"]
+    }
+  }
+}

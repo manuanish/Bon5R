@@ -1,7 +1,7 @@
-import * as React from 'react';
-import Head from 'next/head';
+import * as React from "react";
+import Head from "next/head";
 
-function PageTitle(props){
+function PageTitle(props) {
   return (
     <Head>
       <title>{props.title}</title>

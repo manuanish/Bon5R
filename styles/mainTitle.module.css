@@ -1,0 +1,11 @@
+.buttonHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .buttonHolder {
+    flex-direction: column;
+  }
+}

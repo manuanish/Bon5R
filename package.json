@@ -21,6 +21,7 @@
     "github-markdown-css": "^5.1.0",
     "next": "12.1.5",
     "next-mdx-remote": "^4.0.3",
+    "prettier": "2.6.2",
     "prismjs": "^1.28.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",

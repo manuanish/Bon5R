@@ -1,17 +1,15 @@
 module.exports = {
-  darkMode: 'class',
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily : {
-      'sans' : ['Inter'],
-      'display' : ['Inter'],
-      'body' : ['Inter']
+    fontFamily: {
+      sans: ["Inter"],
+      display: ["Inter"],
+      body: ["Inter"],
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
-}
+  plugins: [require("@tailwindcss/typography")],
+};

@@ -1,12 +1,12 @@
-@import url('@fontsource/inter/100.css');
-@import url('@fontsource/inter/200.css');
-@import url('@fontsource/inter/300.css');
-@import url('@fontsource/inter/400.css');
-@import url('@fontsource/inter/500.css');
-@import url('@fontsource/inter/600.css');
-@import url('@fontsource/inter/700.css');
-@import url('@fontsource/inter/800.css');
-@import url('@fontsource/inter/900.css');
+@import url("@fontsource/inter/100.css");
+@import url("@fontsource/inter/200.css");
+@import url("@fontsource/inter/300.css");
+@import url("@fontsource/inter/400.css");
+@import url("@fontsource/inter/500.css");
+@import url("@fontsource/inter/600.css");
+@import url("@fontsource/inter/700.css");
+@import url("@fontsource/inter/800.css");
+@import url("@fontsource/inter/900.css");
 
 @tailwind base;
 @tailwind components;
@@ -14,9 +14,8 @@
 
 body {
   background-size: 40px 40px;
-  background-image:
-    linear-gradient(to right, #1E293B 1px, transparent 1px),
-    linear-gradient(to bottom, #1E293B 1px, transparent 1px);
+  background-image: linear-gradient(to right, #1e293b 1px, transparent 1px),
+    linear-gradient(to bottom, #1e293b 1px, transparent 1px);
   overflow: scroll;
   transition-duration: 0.25s;
 }
@@ -29,12 +28,13 @@ code {
   overflow: scroll;
 }
 
-::-moz-selection { /* Code for Firefox */
-  background: #F97316;
+::-moz-selection {
+  /* Code for Firefox */
+  background: #f97316;
 }
 
 ::selection {
-  background: #F97316;
+  background: #f97316;
 }
 
 .emoji {
@@ -50,14 +50,14 @@ code {
 }
 
 .markdown-body a {
-  color: #FB923C;
+  color: #fb923c;
 }
-
 
 .markdown-body pre {
-  @apply bg-slate-800
+  @apply bg-slate-800;
 }
 
-textarea:focus, input:focus{
-    outline: none;
+textarea:focus,
+input:focus {
+  outline: none;
 }

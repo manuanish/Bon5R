@@ -4,15 +4,20 @@ import Author from "@components/docs/Author";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import TitleCode from "@components/docs/TitleCode";
-import DocsAd from '@components/docs/DocsAd';
+import DocsAd from "@components/docs/DocsAd";
 
-<PageTitle title="PageTitle"/>
+<PageTitle title="PageTitle" />
 
 <Sidebar />
 <MDXDocs>
-<DocsAd />
-# PageTitle
-<Author author="Manu Anish" displayName="manuanish" date="24/5/22"/>
-<br/>
-<NextPage nextPage="Post" previousPage="Header" prevHref="/docs/component-docs/header" nextHref="/docs/component-docs/post"/>
+  <DocsAd />
+  # PageTitle
+  <Author author="Manu Anish" displayName="manuanish" date="24/5/22" />
+  <br />
+  <NextPage
+    nextPage="Post"
+    previousPage="Header"
+    prevHref="/docs/component-docs/header"
+    nextHref="/docs/component-docs/post"
+  />
 </MDXDocs>
