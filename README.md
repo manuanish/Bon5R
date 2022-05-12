@@ -1,7 +1,9 @@
+![](https://img.shields.io/npm/dt/create-bon5r-app?label=NPM%20Downloads&style=for-the-badge)
+![](https://img.shields.io/github/stars/manuanish/bon5r?style=for-the-badge)
 ![](https://img.shields.io/github/issues/manuanish/bon5r?style=for-the-badge)
 ![](https://img.shields.io/github/forks/manuanish/bon5r?style=for-the-badge)
-![](https://img.shields.io/github/stars/manuanish/bon5r?style=for-the-badge)
 ![](https://img.shields.io/github/license/manuanish/bon5r?style=for-the-badge)
+
 
 <div id="top"></div>
 <br />
