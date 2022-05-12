@@ -1,3 +1,8 @@
+![](https://img.shields.io/github/issues/manuanish/bon5r?style=for-the-badge)
+![](https://img.shields.io/github/forks/manuanish/bon5r?style=for-the-badge)
+![](https://img.shields.io/github/stars/manuanish/bon5r?style=for-the-badge)
+![](https://img.shields.io/github/license/manuanish/bon5r?style=for-the-badge)
+
 <div id="top"></div>
 <br />
 <div align="center">
