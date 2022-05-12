@@ -5,7 +5,7 @@
     <img src="public/bon5r.svg" width="80"/>
   </a>
 
-  <h2 align="center"><b>Bon5R</b></h2>
+  <h3 align="center"><b>Bon5R</b></h3>
 
   <p align="center">
     Create static, blog-aware websites with pure MDX.
