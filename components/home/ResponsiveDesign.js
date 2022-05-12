@@ -1,4 +1,4 @@
-export default function Slide1() {
+export default function ResponsiveDesign() {
   return (
     <div className="p-20 bg-transparent bg-gradient-to-t from-slate-900 via-slate-900 to-transparent">
       <h2 className="mt-40 font-semibold text-indigo-400">Mobile-first</h2>

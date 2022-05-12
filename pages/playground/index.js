@@ -4,7 +4,6 @@ import HeaderPlayground from "@components/home/HeaderPlayground";
 import MainTitle from "@components/home/MainTitle";
 import CodeEditor from "@components/home/CodeEditor";
 import RenderedOutput from "@components/home/RenderedOutput";
-import Slide1 from "@components/home/Slide1";
 import * as React from "react";
 import Editor from "react-simple-code-editor";
 import { highlight, languages } from "prismjs/components/prism-core";

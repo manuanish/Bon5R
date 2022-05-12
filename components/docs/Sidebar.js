@@ -13,14 +13,17 @@ import * as React from "react";
 import Link from "next/link";
 
 export default function Sidebar(props) {
+  const [visibility, setVisibility] = React.useState("invisible");
+
   React.useEffect(() => {
     document
       .getElementById("documentationSidebar")
       .scrollTo({ top: localStorage.getItem("scrollPosition") });
+    setVisibility("visible");
   });
 
   return (
-    <div className="bg-slate-900 z-50 top-0 bottom-0">
+    <div className={`bg-slate-900 z-50 top-0 bottom-0 ${visibility}`}>
       <div
         id="documentationSidebar"
         className="sidebar w-[300px] text-white fixed p-10 pt-0 border-r border-r-slate-800 top-0 bottom-0 overflow-y-scroll"

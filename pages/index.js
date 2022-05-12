@@ -4,7 +4,7 @@ import Header from "@components/home/Header";
 import MainTitle from "@components/home/MainTitle";
 import CodeEditor from "@components/home/CodeEditor";
 import RenderedOutput from "@components/home/RenderedOutput";
-import Slide1 from "@components/home/Slide1";
+import ResponsiveDesign from "@components/home/ResponsiveDesign";
 import HomeAd from "@components/home/HomeAd";
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
           <RenderedOutput />
         </div>
       </div>
-      <Slide1 />
+      <ResponsiveDesign />
     </div>
   );
 }
