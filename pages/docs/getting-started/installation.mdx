@@ -5,6 +5,7 @@ import DocsImage from "@components/docs/DocsImage";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import DocsAd from "@components/docs/DocsAd";
+import Alert from "@components/docs/Alert";
 
 <PageTitle title="Installation" />
 
@@ -12,7 +13,54 @@ import DocsAd from "@components/docs/DocsAd";
 <MDXDocs>
   <DocsAd />
   # Installation
-  <Author author="Manu Anish" displayName="manuanish" date="24/4/22" />
+  <Author author="Manu Anish" displayName="manuanish" date="12/5/22" />
+  <br/>
+  In this page we will look at how to initialize a new bon5r.
+  <br/>
+  ### Prerequisites
+  For everything to run smoothly, your system must already have the following
+  dependencies
+  - `npm`
+  - `yarn`
+  <br/>
+  #### Installing npm
+  To install npm on your system you can run the following command:
+  ```bash
+  npm install npm@latest -g
+  ```
+  <br/>
+  #### Installing yarn
+  To install yarn on your system you can run the following command:
+  ```bash
+  npm install --global yarn
+  ```
+  <br/>
+  <Alert type="info">To be able to install yarn, you must have already installed npm on your system.</Alert>
+  <br/>
+  <br/>
+  <br/>
+  ## Creating your first bon5r
+  To do this, we can use the `create-bon5r-app` package.
+  <br/>
+  #### 1. Setting up the project
+  Run the following command in your terminal:
+  ```bash
+  yarn create bon5r-app my-app && cd my-app
+  ```
+  This will automatically setup a new Bon5R in your current directory.
+
+  <br />
+  #### 2. Start the server
+  To start the development server, we can run the following:
+  ```bash
+  yarn dev
+  ```
+  And thats it! you can view the website at http://localhost:3000.
+  <br />
+  <br />
+  <DocsImage src="/docs/bon5r-installation.png" width="2880" height="1630" caption="http://localhost:3000 should look like this..."/>
+  <br />
+  <br />
   <br />
   <NextPage
     nextPage="Next Steps"

@@ -45,7 +45,28 @@ export default function CodeEditor() {
             {"## Hello World!"} <Twemoji emoji="👋" />
           </span>
           <br />
-          This is the main page content.
+          This is my first post! In this page, we will prove the
+          <br />
+          [Riemann Hypothesis](
+          <a
+            className="token function hover:underline"
+            href="https://en.wikipedia.org/wiki/Riemann_hypothesis"
+          >
+            Riemann Hypothesis
+          </a>
+          ).
+          <br />
+          Begin by noting that the Riemann zeta function
+          <br />
+          is defined as the following:
+          <br />
+          <br />
+          $$
+          <br />
+          \zeta(s) = \sum_&#123;n=1&#125;^\infty =
+          \frac&#123;1&#125;&#123;n^s&#125;
+          <br />
+          $$
           <br />
           <br />
           <span className="token keyword">{"<"}</span>

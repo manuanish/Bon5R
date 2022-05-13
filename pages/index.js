@@ -4,7 +4,7 @@ import Header from "@components/home/Header";
 import MainTitle from "@components/home/MainTitle";
 import CodeEditor from "@components/home/CodeEditor";
 import RenderedOutput from "@components/home/RenderedOutput";
-import ResponsiveDesign from "@components/home/ResponsiveDesign";
+import Frameworks from "@components/home/Frameworks";
 import HomeAd from "@components/home/HomeAd";
 
 export default function Home() {
@@ -17,9 +17,7 @@ export default function Home() {
         className="bg-transparent bg-gradient-to-b from-slate-900 via-[rgba(15,23,42,0.75)] to-transparent"
         style={{ overflow: "scroll" }}
       >
-        <div className="markdown-body">
-          <HomeAd />
-        </div>
+        <div className="markdown-body"></div>
         <Header />
         <MainTitle />
         <div
@@ -30,7 +28,7 @@ export default function Home() {
           <RenderedOutput />
         </div>
       </div>
-      <ResponsiveDesign />
+      <Frameworks />
     </div>
   );
 }

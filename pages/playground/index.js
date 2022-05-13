@@ -1,27 +1,9 @@
 import Head from "next/head";
 import Twemoji from "@components/Twemoji";
-import HeaderPlayground from "@components/home/HeaderPlayground";
-import MainTitle from "@components/home/MainTitle";
-import CodeEditor from "@components/home/CodeEditor";
-import RenderedOutput from "@components/home/RenderedOutput";
 import * as React from "react";
-import Editor from "react-simple-code-editor";
-import { highlight, languages } from "prismjs/components/prism-core";
-import "prismjs/components/prism-clike";
-import "prismjs/components/prism-javascript";
-import { compile } from "@mdx-js/mdx";
+import HeaderPlayground from "@components/home/HeaderPlayground";
 
 export default function Home() {
-  const [code, setCode] = React.useState(``);
-  const onEditorChanged = async (event) => {
-    console.log(event);
-    setCode(event);
-
-    try {
-      console.log(getStaticProps());
-    } catch {}
-  };
-
   return (
     <div className="bg-slate-900 text-white">
       <Head>
@@ -33,27 +15,20 @@ export default function Home() {
       >
         <HeaderPlayground />
       </div>
-      <div className="flex justify-center h-[600px]">
-        <div
-          className="bg-slate-800 m-10 mr-0 p-4"
-          style={{ width: "50%", borderRadius: "10px 0px 0px 10px" }}
-        >
-          <Editor
-            value={code}
-            onValueChange={onEditorChanged}
-            highlight={(code) => highlight(code, languages.js, languages.html)}
-            padding={10}
-            style={{
-              fontFamily: '"Fira code", "Fira Mono", monospace',
-              fontSize: 20,
-            }}
-            className="textEditor"
-          />
-        </div>
-        <div
-          className="markdown-body text-white bg-slate-600 m-10 ml-0 p-4"
-          style={{ width: "50%", borderRadius: "0px 10px 10px 0px" }}
-        ></div>
+      <div className="flex justify-center h-[600px] mt-8">
+        <iframe
+          src="https://codesandbox.io/embed/bon5r-playground-cw3d9r?fontsize=14&hidenavigation=1&theme=dark"
+          style={{
+            width: "100%",
+            height: "calc(100vh - 92px)",
+            border: 0,
+            overflow: "hidden",
+            outline: "none",
+          }}
+          title="bon5r-playground"
+          allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+        ></iframe>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div className="relative pt-6 lg:pt-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 text-slate-100">
       <div className="pl-8 font-bold text-lg whitespace-nowrap shadow-lg mr-10 relative">
-        <span className="flex">
+        <span className="flex text-white">
           <svg
             className="fill-orange-500"
             strokeWidth="0"
@@ -18,7 +18,10 @@ export default function Header() {
           &nbsp;Bon5R
         </span>
       </div>
-      <div className="flex items-center" style={{ overflowX: "scroll" }}>
+      <div
+        className="flex items-center text-slate-200"
+        style={{ overflowX: "scroll" }}
+      >
         <div className="flex items-center">
           <nav>
             <ul className="flex items-center space-x-8">

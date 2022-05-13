@@ -61,3 +61,7 @@ textarea:focus,
 input:focus {
   outline: none;
 }
+
+.markdown-body ul {
+  list-style-type: disc;
+}
