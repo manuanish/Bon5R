@@ -68,8 +68,9 @@ export default function Handcrafted() {
           </div>
           <div className="mt-4 space-y-6 text-slate-500 text-right flex justify-end text-right w-full">
             <div className="max-w-[510px]">
-              Don't waste your time re-creating the same components. Bon5R comes
-              with handcrafted components so you can focus on what matters most.
+              Don&apos;t waste your time re-creating the same components. Bon5R
+              comes with handcrafted components so you can focus on what matters
+              most.
             </div>
           </div>
           <a
