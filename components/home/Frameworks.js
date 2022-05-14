@@ -2,7 +2,7 @@ import { PlugIcon } from "@primer/octicons-react";
 
 export default function Frameworks() {
   return (
-    <div>
+    <div className="z-50">
       <div className="p-20 bg-transparent bg-gradient-to-t from-slate-900 via-slate-900 to-transparent w-full shadow-2xl">
         <div className="p-8 rounded-full mt-20 text-green-700 bg-green-400 w-fit mb-10 border-4 border-green-600">
           <PlugIcon size={30} />
@@ -10,10 +10,10 @@ export default function Frameworks() {
         <h2 className="font-semibold text-green-400 text-left max-w-[510px]">
           &nbsp;Compatible
         </h2>
-        <p className="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-50 text-left max-w-[510px]">
+        <p className="mt-4 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-50 text-left max-w-[510px] z-50">
           Built with frameworks you know & love.
         </p>
-        <p className="mt-4 space-y-6 text-slate-500 text-left max-w-[510px]">
+        <p className="mt-4 space-y-6 text-slate-500 text-left max-w-[510px] z-50">
           Get your personal website up and running without learning any new
           code.
         </p>

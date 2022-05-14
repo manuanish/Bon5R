@@ -6,8 +6,11 @@ import CodeEditor from "@components/home/CodeEditor";
 import RenderedOutput from "@components/home/RenderedOutput";
 import Frameworks from "@components/home/Frameworks";
 import Handcrafted from "@components/home/Handcrafted";
+import ResponsiveDesign from "@components/home/ResponsiveDesign";
 import HomeAd from "@components/home/HomeAd";
-import Art1 from "@components/home/Art1";
+import Art1 from "@components/home/Art/Art1";
+import Art2 from "@components/home/Art/Art2";
+import Art0 from "@components/home/Art/Art0";
 
 export default function Home() {
   return (
@@ -27,9 +30,12 @@ export default function Home() {
           <RenderedOutput />
         </div>
       </div>
+      <Art0 />
       <Frameworks />
       <Art1 />
       <Handcrafted />
+      <Art2 />
+      <ResponsiveDesign />
     </div>
   );
 }
