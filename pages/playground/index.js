@@ -17,7 +17,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center h-[600px] mt-8">
         <iframe
-          src="https://codesandbox.io/embed/bon5r-playground-cw3d9r?fontsize=14&hidenavigation=1&theme=dark"
+          src="https://codesandbox.io/embed/angry-cdn-2bp3w6?fontsize=14&hidenavigation=1&theme=dark"
           style={{
             width: "100%",
             height: "calc(100vh - 92px)",
