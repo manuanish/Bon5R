@@ -12,21 +12,21 @@ export default function CodeEditor() {
           <span className="token keyword">import</span>{" "}
           <span className="token tag">Header</span>{" "}
           <span className="token keyword">from</span>{" "}
-          <span className="token string">&quot;../components/Header&quot;</span>
+          <span className="token string">&quot;@/components/Header&quot;</span>
           ;
           <br />
           <span className="token keyword">import</span>{" "}
           <span className="token tag">BlogTitle</span>{" "}
           <span className="token keyword">from</span>{" "}
           <span className="token string">
-            &quot;../components/BlogTitle&quot;
+            &quot;@/components/BlogTitle&quot;
           </span>
           ;
           <br />
           <span className="token keyword">import</span>{" "}
           <span className="token tag">Footer</span>{" "}
           <span className="token keyword">from</span>{" "}
-          <span className="token string">&quot;../components/Footer&quot;</span>
+          <span className="token string">&quot;@/components/Footer&quot;</span>
           ;
           <br />
           <br />

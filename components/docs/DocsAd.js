@@ -36,7 +36,9 @@ export default function DocsAd() {
       <div className="grow">
         <div className="text-center">
           Try Bon5R in your browser! &nbsp;
-          <Link href="/playground">{"Visit the playground ->"}</Link>
+          <Link href="/playground" target="_blank" rel="noopener noreferrer">
+            {"Visit the playground ->"}
+          </Link>
         </div>
       </div>
       <div className="grow-0 text-slate-500 hover:text-slate-300">

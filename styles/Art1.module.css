@@ -1,0 +1,13 @@
+.shape {
+  position: absolute;
+  border-top: 20px solid #6366f1;
+  width: calc(100% - 150px);
+  max-width: 800px;
+  transform: rotate(10deg);
+  transform-origin: 0% 0%;
+  margin-top: 150px;
+  margin-left: 150px;
+  filter: blur(50px);
+  display: flex;
+  flex-shrink: 1;
+}

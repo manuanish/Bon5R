@@ -24,7 +24,10 @@ export default function HeaderPlayground() {
           &nbsp;<span className="text-orange-500 font-normal">Playground</span>
         </span>
       </div>
-      <div className="flex items-center text-white" style={{ overflowX: "scroll" }}>
+      <div
+        className="flex items-center text-white"
+        style={{ overflowX: "scroll" }}
+      >
         <div className="flex items-center">
           <nav>
             <ul className="flex items-center space-x-8">
