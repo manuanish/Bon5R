@@ -1,6 +1,6 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
-import Author from "@components/docs/Author";
+import Contributors from "@components/docs/Contributors";
 import DocsImage from "@components/docs/DocsImage";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
@@ -13,11 +13,12 @@ import Alert from "@components/docs/Alert";
 <MDXDocs>
   <DocsAd />
   # Installation
-  <Author author="Manu Anish" displayName="manuanish" date="12/5/22" />
+  <Contributors contributors={["manuanish"]} readTime={5}/>
+  ---
   <br/>
-  In this page we will look at how to initialize a new bon5r.
+  In this page we will look at how to create a new Bon5R.
   <br/>
-  ### Prerequisites
+  ### 📦 Prerequisites
   For everything to run smoothly, your system must already have the following
   dependencies
   - `npm`
@@ -29,7 +30,7 @@ import Alert from "@components/docs/Alert";
   npm install npm@latest -g
   ```
   <br/>
-  #### Installing yarn
+  #### Installing yarn 🧶
   To install yarn on your system you can run the following command:
   ```bash
   npm install --global yarn
@@ -39,7 +40,7 @@ import Alert from "@components/docs/Alert";
   <br/>
   <br/>
   <br/>
-  ## Creating your first bon5r
+  ## 🛠 Creating your first bon5r
   To do this, we can use the `create-bon5r-app` package.
   <br/>
   #### 1. Setting up the project
@@ -50,22 +51,22 @@ import Alert from "@components/docs/Alert";
   This will automatically setup a new Bon5R in your current directory.
 
   <br />
-  #### 2. Start the server
+  #### 2. Start the server 🚀
   To start the development server, we can run the following:
   ```bash
   yarn dev
   ```
-  And thats it! you can view the website at http://localhost:3000.
+  And thats it! 🎉 you can view the website at http://localhost:3000. The website hot-reloads ⚡️ when you change the code so you don't have to constanly refresh.
   <br />
   <br />
-  <DocsImage src="/docs/bon5r-installation.png" width="2880" height="1630" caption="http://localhost:3000 should look like this..."/>
+  <DocsImage src="/docs/bon5r-installation.png" width="2880" height="1630" caption="http://localhost:3000 should return this &#8593;"/>
   <br />
   <br />
   <br />
   <NextPage
     nextPage="Next Steps"
-    previousPage="Installation"
-    prevHref="/docs/getting-started/installation"
+    previousPage="Getting Started"
+    prevHref="/docs/getting-started"
     nextHref="/docs/getting-started/next-steps"
   />
 </MDXDocs>

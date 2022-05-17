@@ -1,0 +1,58 @@
+import Sidebar from "@components/docs/Sidebar";
+import MDXDocs from "@components/docs/MDXDocs";
+import Contributors from "@components/docs/Contributors";
+import Author from "@components/docs/bon5r/Author";
+import NextPage from "@components/docs/NextPage";
+import PageTitle from "@components/docs/PageTitle";
+import DocsAd from "@components/docs/DocsAd";
+import TitleCode from "@components/docs/TitleCode"
+import Demo from "@components/docs/Demo";
+import Alert from "@components/docs/Alert";
+
+<PageTitle title="Component Documentation" />
+
+<Sidebar />
+<MDXDocs>
+  <DocsAd />
+  # Component Documentation
+  <Contributors contributors={["manuanish"]} readTime={1} />
+  ---
+  <br />
+  In this page we will discuss the built in Bon5R components. We will broadly go over how to use them and how they work.
+  <br />
+  ### 🛠 Use case
+  Consider the following example. Let us say we wanted to use the Author component in our markdown file; we can do this like so:
+  <TitleCode title="example.mdx">
+  ```jsx
+  import Author from "@components/Author";
+
+  <Author
+    author="Manu Anish"
+    displayName="manuanish"
+    date="3/14/15"
+  />
+  ```
+  </TitleCode>
+  <br/>
+  This we be rendered as the following:
+  <Demo>
+    <Author
+      author="Manu Anish"
+      displayName="manuanish"
+      date="3/14/15"
+    />
+  </Demo>
+  <br />
+  #### ⚙️ JS Config
+  Notice that the import path for the function is **not relative**.
+  Wherever your MDX file is located in the `/pages` directory the import statement does not change.
+  <br/>
+  <br/>
+  <br/>
+  <NextPage
+    nextPage="Author"
+    previousPage="Next Steps"
+    prevHref="/docs/getting-started/next-steps"
+    nextHref="/docs/component-docs/author"
+  />
+</MDXDocs>

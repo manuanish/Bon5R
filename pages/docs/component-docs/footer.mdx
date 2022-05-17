@@ -1,10 +1,13 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
-import Author from "@components/docs/Author";
+import Contributors from "@components/docs/Contributors";
+import Footer from "@components/docs/bon5r/Footer";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
+import Demo from "@components/docs/Demo";
+import Alert from "@components/docs/Alert";
 
 <PageTitle title="Footer" />
 
@@ -12,7 +15,34 @@ import DocsAd from "@components/docs/DocsAd";
 <MDXDocs>
   <DocsAd />
   # Footer
-  <Author author="Manu Anish" displayName="manuanish" date="24/5/22" />
+  <Contributors contributors={["manuanish"]} readTime={2} />
+  ---
+  The Footer component can be used at the end of the page to convey a small message.
+  <br/>
+  ## Usage
+  We can use the Footer component like so:
+  <TitleCode title="blog-title.mdx">
+  ```jsx
+  import Footer from "@components/Footer";
+
+  <Footer>Code with ❤️ by @manuanish</Footer>
+  ```
+  </TitleCode>
+  <br/>
+  <br/>
+  This we be rendered as shown:
+  <Demo>
+    <Footer>Code with ❤️ by @manuanish</Footer>
+  </Demo>
+  <br/>
+
+  <br />
+  ### Props
+
+| Name      | Type | Default | Description |
+| --------- | ---- | ------- | ----- |
+
+
   <br />
   <NextPage
     nextPage="Header"

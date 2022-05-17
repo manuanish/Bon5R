@@ -27,7 +27,7 @@ export default function Header() {
             <ul className="flex items-center space-x-8">
               <li className="hover:text-orange-400">
                 <Link
-                  href="/docs/getting-started/installation"
+                  href="/docs/getting-started/"
                   passHref={false}
                 >
                   Docs

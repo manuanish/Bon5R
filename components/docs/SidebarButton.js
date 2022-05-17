@@ -29,7 +29,7 @@ export default function SidebarButton(props) {
       <button
         id={props.href}
         onClick={onButtonClick}
-        className="block border-l w-full pb-2 pt-2 pl-5 text-left -ml-px border-transparent border-slate-700 hover:border-slate-500 text-slate-400 hover:text-slate-300"
+        className="block border-l w-full pb-2 pt-2 pl-5 text-left -ml-px border-transparent border-slate-600 hover:border-slate-500 text-slate-400 hover:text-slate-300"
       >
         {props.pageTitle}
       </button>

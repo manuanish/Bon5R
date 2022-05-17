@@ -1,10 +1,12 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
-import Author from "@components/docs/Author";
+import Contributors from "@components/docs/Contributors";
+import Author from "@components/docs/bon5r/Author";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
+import Demo from "@components/docs/Demo";
 
 <PageTitle title="Author" />
 
@@ -12,12 +14,47 @@ import DocsAd from "@components/docs/DocsAd";
 <MDXDocs>
   <DocsAd />
   # Author
-  <Author author="Manu Anish" displayName="manuanish" date="24/5/22" />
+  <Contributors contributors={["manuanish"]} readTime={2} />
+  ---
+  The Author component can be used to preface a page linking to the author's GitHub account.
+  <br/>
+  ## Usage
+  We can use the Author component like so:
+  <TitleCode title="author.mdx">
+  ```jsx
+  import Author from "@components/Author";
+
+  <Author
+    author="Manu Anish"
+    displayName="manuanish"
+    date="3/14/15"
+  />
+  ```
+  </TitleCode>
+  <br/>
+  This we be rendered as shown:
+  <Demo>
+    <Author
+      author="Manu Anish"
+      displayName="manuanish"
+      date="3/14/15"
+    />
+  </Demo>
+  <br />
+  ### Props
+
+| Name      | Type | Default | Description |
+| --------- | ---- | ------- | ----- |
+| `author`  |  `string`    |    `""`     | This is the value that will be name of the link.|
+| `displayName` | `string` |     `""`    | This is the GitHub username of the author.      |
+| `data`    |   `string`   |     `""`   | This is the date of posting.        |
+  <br />
+  <br />
   <br />
   <NextPage
     nextPage="BlogTitle"
-    previousPage="Next Steps"
-    prevHref="/docs/getting-started/next-steps"
+    previousPage="Component Documentation"
+    prevHref="/docs/component-docs/"
     nextHref="/docs/component-docs/blog-title"
   />
 </MDXDocs>

@@ -1,10 +1,13 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
-import Author from "@components/docs/Author";
+import Contributors from "@components/docs/Contributors";
+import Button from "@components/docs/bon5r/Button";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
+import Demo from "@components/docs/Demo";
+import Alert from "@components/docs/Alert";
 
 <PageTitle title="Button" />
 
@@ -12,7 +15,43 @@ import DocsAd from "@components/docs/DocsAd";
 <MDXDocs>
   <DocsAd />
   # Button
-  <Author author="Manu Anish" displayName="manuanish" date="24/5/22" />
+  <Contributors contributors={["manuanish"]} readTime={2} />
+  ---
+  The Button component can be used to as a link, like counter, etc.
+  <br/>
+  ## Usage
+  We can use the Button component like so:
+  <TitleCode title="blog-title.mdx">
+  ```jsx
+  import Button from "@components/Button";
+
+  <Button
+    href="#"
+    text="My MDX Button"
+  />
+  ```
+  </TitleCode>
+  <br/>
+  <Alert type="warning">The `href` prop should not be left empty. This may cause errors.</Alert>
+  <br/>
+  This we be rendered as shown:
+  <Demo>
+    <Button
+      href="#"
+      text="My MDX Button"
+    />
+  </Demo>
+  <br/>
+
+  <br />
+  ### Props
+
+| Name      | Type | Default | Description |
+| --------- | ---- | ------- | ----- |
+| `href`  |  `string`    |    `""`     | The page the button links to. <br />**Should not be left empty!**|
+| `text` | `string` |     `""`    | The inner text of the button.     |
+
+
   <br />
   <NextPage
     nextPage="Footer"

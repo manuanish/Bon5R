@@ -24,7 +24,7 @@ export default function MainTitle() {
       <div
         className={`${styles.buttonHolder} mt-6 sm:mt-10 text-sm p-5 gap-5 flex justify-center`}
       >
-        <Link href="/docs/getting-started/installation" passHref>
+        <Link href="/docs/getting-started/" passHref>
           <button className="bg-slate-900 hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto   bg-orange-500  highlight-white/20">
             Get Started
           </button>

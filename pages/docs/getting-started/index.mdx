@@ -1,0 +1,42 @@
+import Sidebar from "@components/docs/Sidebar";
+import MDXDocs from "@components/docs/MDXDocs";
+import NextPage from "@components/docs/NextPage";
+import PageTitle from "@components/docs/PageTitle";
+import DocsAd from "@components/docs/DocsAd";
+import Contributors from "@components/docs/Contributors";
+
+<PageTitle title="Getting Started" />
+
+<Sidebar />
+<MDXDocs>
+  <DocsAd />
+  # Getting Started
+  <Contributors contributors={["manuanish"]} readTime={1}/>
+  ---
+  <br />
+  In this page we will discuss how to get started with your first Bon5R application. Here is a short list of things you may want to try:
+  <br/>
+  ### 🛠 Creating your first application <br />
+  For more instructions, please visit the [Installation](/docs/getting-started/installation) page.
+  <br/>
+  ### 📦 Component Documentation  <br/>
+  For a list of examples and demos of built-in components visit the [Built-in Components](/docs/component-docs) page.
+  <br/>
+  ### ✨ Customization <br/>
+  Learn how to customize your Bon5R application here: [Customization](/docs/customization).
+  <br/>
+  ### 🚀 Deployment Guides <br/>
+  Learn how to deploy your application here: [Deployment Guides](/docs/deployment).
+  <br/>
+  ### ✍️ Contributing <br/>
+  Your contributions are always welcome! View the guidelines here: [Contributing](/docs/contributing).
+  <br/>
+  <br/>
+  <br/>
+  <NextPage
+    nextPage="Installation"
+    previousPage="Getting Started"
+    prevHref="/docs/getting-started/"
+    nextHref="/docs/getting-started/installation"
+  />
+</MDXDocs>

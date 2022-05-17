@@ -70,6 +70,41 @@ input:focus {
 }
 
 .math {
-  scale: 1.5;
+  transform: scale(1.5);
   overflow: hidden;
+}
+
+.markdown-body hr {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1)
+}
+
+.markdown-body h1 {
+  border: none;
+}
+
+.markdown-body h2 {
+  border: none;
+}
+
+.markdown-body td {
+  @apply bg-slate-800;
+  @apply border;
+  @apply border-slate-700;
+}
+
+.markdown-body thead {
+  @apply bg-slate-800;
+  @apply border;
+  @apply border-slate-700;
+}
+
+.markdown-body tr {
+  @apply bg-slate-800;
+  @apply border;
+  @apply border-slate-700;
+}
+
+.markdown-body th {
+  @apply bg-slate-800 border border-slate-700
 }

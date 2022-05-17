@@ -1,10 +1,13 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
-import Author from "@components/docs/Author";
+import Contributors from "@components/docs/Contributors";
+import Header from "@components/docs/bon5r/Header";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
+import Demo from "@components/docs/Demo";
+import Alert from "@components/docs/Alert";
 
 <PageTitle title="Header" />
 
@@ -12,7 +15,34 @@ import DocsAd from "@components/docs/DocsAd";
 <MDXDocs>
   <DocsAd />
   # Header
-  <Author author="Manu Anish" displayName="manuanish" date="24/5/22" />
+  <Contributors contributors={["manuanish"]} readTime={2} />
+  ---
+  The Header component can be used at the end of the page to convey a small message.
+  <br/>
+  ## Usage
+  We can use the Header component like so:
+  <TitleCode title="blog-title.mdx">
+  ```jsx
+  import Header from "@components/Header";
+
+  <Header>🔥 Welcome to Bon5R!</Header>
+  ```
+  </TitleCode>
+  <br/>
+  <br/>
+  This we be rendered as shown:
+  <Demo>
+    <Header>🔥 Welcome to Bon5R!</Header>
+  </Demo>
+  <br/>
+
+  <br />
+  ### Props
+
+| Name      | Type | Default | Description |
+| --------- | ---- | ------- | ----- |
+
+
   <br />
   <NextPage
     nextPage="PageTitle"

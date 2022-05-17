@@ -1,6 +1,6 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
-import Author from "@components/docs/Author";
+import Contributors from "@components/docs/Contributors";
 import DocsImage from "@components/docs/DocsImage";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
@@ -12,12 +12,29 @@ import DocsAd from "@components/docs/DocsAd";
 <MDXDocs>
   <DocsAd />
   # Next Steps
-  <Author author="Manu Anish" displayName="manuanish" date="24/5/22" />
+  <Contributors contributors={["manuanish"]} readTime={2}/>
+  ---
+  So you created your first Bon5R - That's awesome! 🥳 Here are some things you may be interested in learning.
+  <br />
+  ### 🔌 Next.js page routing
+  Bon5R is built using [Next.js](https://nextjs.org) and so the static page routing is quite similar. If you are unfamilliar with this,
+  I suggest that you look into the [routing documentation](https://nextjs.org/docs/routing/introduction)
+  to learn more about how the returned URL and file paths are related.
+  <br/>
+  ### 🎨 Tailwindcss directives
+  If you are trying to customize Bon5R, I would strongly reccommend learning tailwind classes, directives as it improves the development experience tremendously.
+  If you want to learn more, visit the [Tailwindcss documentation](https://tailwindcss.com/docs/installation).
+  <br />
+  ### 📖 MDX
+  Bon5R heavily relies on [MDX](https://mdxjs.com) and moreover all pages are rendered in this format. MDX is quite similar to standard markdown however it allows JSX expressions, components
+  inside the text. If you would like to learn more about MDX, refer to the [documentation](https://mdxjs.com/docs/what-is-mdx/).
+  <br />
+  <br />
   <br />
   <NextPage
-    nextPage="Author"
+    nextPage="Component Documentation"
     previousPage="Installation"
     prevHref="/docs/getting-started/installation"
-    nextHref="/docs/component-docs/author"
+    nextHref="/docs/component-docs"
   />
 </MDXDocs>

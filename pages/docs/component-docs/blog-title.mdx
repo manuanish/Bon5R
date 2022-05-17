@@ -1,10 +1,12 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
-import Author from "@components/docs/Author";
+import Contributors from "@components/docs/Contributors";
+import BlogTitle from "@components/docs/bon5r/BlogTitle";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
+import Demo from "@components/docs/Demo";
 
 <PageTitle title="BlogTitle" />
 
@@ -12,7 +14,39 @@ import DocsAd from "@components/docs/DocsAd";
 <MDXDocs>
   <DocsAd />
   # BlogTitle
-  <Author author="Manu Anish" displayName="manuanish" date="24/5/22" />
+  <Contributors contributors={["manuanish"]} readTime={2} />
+  ---
+  The BlogTitle component can be used to create the main page of blog.
+  <br/>
+  ## Usage
+  We can use the BlogTitle component like so:
+  <TitleCode title="blog-title.mdx">
+  ```jsx
+  import BlogTitle from "@components/BlogTitle";
+
+  <BlogTitle
+    title="🔥 My Blog Title"
+    subTitle="A short description of the blog"
+  />
+  ```
+  </TitleCode>
+  <br/>
+  This we be rendered as shown:
+  <Demo>
+    <BlogTitle
+      title="🔥 My Blog Title"
+      subTitle="A short description of the blog"
+    />
+  </Demo>
+  <br />
+  ### Props
+
+| Name      | Type | Default | Description |
+| --------- | ---- | ------- | ----- |
+| `title`  |  `string`    |    `""`     | This title of the blog.|
+| `subTitle` | `string` |     `""`    | This is sub-title of the blog.      |
+
+
   <br />
   <NextPage
     nextPage="Button"
