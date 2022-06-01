@@ -1,10 +1,13 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
-import Author from "@components/docs/Author";
+import Contributors from "@components/docs/Contributors";
+import Author from "@components/docs/bon5r/Author";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
-import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
+import TitleCode from "@components/docs/TitleCode"
+import Demo from "@components/docs/Demo";
+import Alert from "@components/docs/Alert";
 
 <PageTitle title="Customization" />
 
@@ -12,8 +15,17 @@ import DocsAd from "@components/docs/DocsAd";
 <MDXDocs>
   <DocsAd />
   # Customization
-  <Author author="Manu Anish" displayName="manuanish" date="24/5/22" />
-  <br />
+  <Contributors contributors={["manuanish"]} readTime={1} />
+  ---
+  In this section we we look at how to customize your Bon5R application. There are many ways this can be done, however in the next few pages we broadly discuss some of the main few.
+  <br/>
+  ### Prerequisites
+  #### 🎨 Tailwindcss directives
+  If you are trying to customize Bon5R, I would strongly reccommend learning tailwind classes, directives as it improves the development experience tremendously.
+  If you want to learn more, visit the [Tailwindcss documentation](https://tailwindcss.com/docs/installation).
+  <br/>
+  <br/>
+  <br/>
   <NextPage
     nextPage="Editing Components"
     previousPage="Post"

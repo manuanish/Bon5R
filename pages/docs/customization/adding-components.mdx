@@ -1,10 +1,13 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
-import Author from "@components/docs/Author";
+import Contributors from "@components/docs/Contributors";
+import AuthorModified from "@components/docs/bon5r/AuthorModified";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
-import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
+import TitleCode from "@components/docs/TitleCode"
+import Demo from "@components/docs/Demo";
+import Alert from "@components/docs/Alert";
 
 <PageTitle title="Creating your own components" />
 
@@ -12,8 +15,49 @@ import DocsAd from "@components/docs/DocsAd";
 <MDXDocs>
   <DocsAd />
   # Creating your own components
-  <Author author="Manu Anish" displayName="manuanish" date="24/5/22" />
-  <br />
+  <Contributors contributors={["manuanish"]} readTime={5} />
+  ---
+  In this page we will look at an example that describes how we might create a Bon5R component.
+  <br/>
+  ## Creating the `...` component
+  Let's begin by locating where the source code for the `Author` component is located. If we navigate to the `components`
+  folder we can see that all the built-in components are stored there. Let's take a look at the `components/Author.js`
+  <br/>
+  <TitleCode title='[...].js'>
+  ```jsx
+  import * as React from "react";
+  import Image from "next/image";
+
+  ...
+  ```
+  <br/>
+  </TitleCode>
+  From here we can change the code and make it fit our theme/needs. In this example I have decided to include a way to "map" authors into the component so that more than one author can write a page.
+
+  ### Modified `Author` component
+  <TitleCode title="[...].js*">
+  ```jsx
+  import Image from "next/image";
+  import Link from "next/link";
+
+  ...
+  ```
+  </TitleCode>
+  We will now look at how we might use this modified component in our application
+  ### Usage
+  We can import the component exactly as before and it should work.
+  <TitleCode title="[...].mdx">
+  ```jsx
+  ...
+  ```
+  </TitleCode>
+  <br/>
+  This should give us the following
+  <Demo>
+  </Demo>
+  <br/>
+  <br/>
+  <br/>
   <NextPage
     nextPage="Adding Remark/Rehype Plugins"
     previousPage="Editing built-in components"
