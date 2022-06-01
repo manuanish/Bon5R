@@ -1,10 +1,13 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
-import Author from "@components/docs/Author";
+import Contributors from "@components/docs/Contributors";
+import Header from "@components/docs/bon5r/Header";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
+import Demo from "@components/docs/Demo";
+import Alert from "@components/docs/Alert";
 
 <PageTitle title="PageTitle" />
 
@@ -12,7 +15,32 @@ import DocsAd from "@components/docs/DocsAd";
 <MDXDocs>
   <DocsAd />
   # PageTitle
-  <Author author="Manu Anish" displayName="manuanish" date="24/5/22" />
+  <Contributors contributors={["manuanish"]} readTime={2} />
+  ---
+  The PageTitle component is used to change the title of the tab.
+  <br/>
+  ## Usage
+  We can use the PageTitle component like so:
+  <TitleCode title="page-title.mdx">
+  ```jsx
+  import PageTitle from "@components/PageTitle";
+
+  <PageTitle title="My page title"/>
+  ```
+  </TitleCode>
+  <br/>
+  <br/>
+  The following does not have any effect on the DOM rendering but if we look closely we can see that the title of the tab has changed to the provided string.
+  <br/>
+
+  <br />
+  ### Props
+
+| Name      | Type | Default | Description |
+| --------- | ---- | ------- | ----- |
+| `title` | `string` | `""` | The title of the webpage. |
+
+
   <br />
   <NextPage
     nextPage="Post"

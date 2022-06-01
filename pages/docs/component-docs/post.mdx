@@ -1,10 +1,13 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
-import Author from "@components/docs/Author";
+import Contributors from "@components/docs/Contributors";
+import Post from "@components/docs/bon5r/Post";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
+import Demo from "@components/docs/Demo";
+import Alert from "@components/docs/Alert";
 
 <PageTitle title="Post" />
 
@@ -12,7 +15,52 @@ import DocsAd from "@components/docs/DocsAd";
 <MDXDocs>
   <DocsAd />
   # Post
-  <Author author="Manu Anish" displayName="manuanish" date="24/5/22" />
+  <Contributors contributors={["manuanish"]} readTime={2} />
+  ---
+  The Post component can be used at the end of the page to convey a small message.
+  <br/>
+  ## Usage
+  We can use the Post component like so:
+  <TitleCode title="header.mdx">
+  ```jsx
+  import Post from "@components/Post";
+
+  <Post
+    title="Hello World!"
+    date="3/14/15"
+    description="This is an example post, demonstrating the power
+    of Bon5R. It displays some features that are included in this project."
+    href="#"
+  />
+  ```
+  </TitleCode>
+  <br/>
+  <Alert type="warning">The `href` prop should not be left empty. This may cause errors.</Alert>
+  <br/>
+  This we be rendered as shown:
+  <Demo>
+    <Post
+      title="Hello World!"
+      date="3/14/15"
+      description="This is an example post, demonstrating the power
+      of Bon5R. It displays some features that are included in this project."
+      href="#"
+    />
+  </Demo>
+  <br/>
+
+  <br />
+  ### Props
+
+| Name      | Type | Default | Description |
+| --------- | ---- | ------- | ----- |
+| `title` | `string` | `""` | The title of the post.|
+| `date` | `string` | `""` | The date at which the post was posted. |
+| `description` | `string` | `""` | A short description of what the post is about. |
+| `href` | `string` | `""` | The page the post links to. <br />**Should not be left empty!** |
+
+
+
   <br />
   <NextPage
     nextPage="Customization"
