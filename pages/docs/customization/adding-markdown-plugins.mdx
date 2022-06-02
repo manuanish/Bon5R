@@ -1,23 +1,110 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
-import Author from "@components/docs/Author";
+import Contributors from "@components/docs/Contributors";
+import Author from "@components/docs/bon5r/Author";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
-import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
+import TitleCode from "@components/docs/TitleCode";
+import Demo from "@components/docs/Demo";
+import Alert from "@components/docs/Alert";
 
-<PageTitle title="Adding Remark/Rehype Plugins" />
+<PageTitle title="Customization" />
 
 <Sidebar />
 <MDXDocs>
   <DocsAd />
   # Adding Remark/Rehype Plugins
-  <Author author="Manu Anish" displayName="manuanish" date="24/5/22" />
-  <br />
-  <NextPage
-    nextPage="Deployment Guides"
-    previousPage="Creating your own components"
-    prevHref="/docs/customization/adding-components"
-    nextHref="/docs/deployment/"
-  />
+  <Contributors contributors={["manuanish"]} readTime={6} />
+  ---
+  In this section we we look at how you might add more plugins to customize your markdown output.
+  <br/>
+  ### ⚙️ Next.js Config
+  The default Next.js config is located at `next.config.mjs`
+<TitleCode title='next.config.mjs'>
+```js
+import withMDX from "@next/mdx";
+import remarkPrism from "remark-prism";
+import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+
+const config = withMDX({
+extension: /\.mdx?/,
+options: {
+remarkPlugins: [remarkGfm, remarkPrism, remarkMath],
+rehypePlugins: [rehypeKatex],
+},
+});
+
+export default config({
+  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
+  reactStrictMode: true,
+  images: {
+    domains: ["github.com"],
+  },
+});
+
+````
+</TitleCode>
+<br/>
+**remark.js** has a [list of markdown plugins](https://github.com/remarkjs/remark/blob/main/doc/plugins.md) you can add to your project. In the next section we will look at how you might add these to your project
+
+<br/>
+<br/>
+### Adding the `remark-toc` plugin
+#### 1. Installation
+We can add the plugin to our project using the following command:
+```bash
+yarn add remark-toc
+````
+
+<br />
+#### 2. Editing Next Config
+We can now add the following import statement to the `next.config.mjs` file.
+<TitleCode title='next.config.mjs'>
+```js
+import withMDX from "@next/mdx";
+import remarkPrism from "remark-prism";
+import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import remarkToc from "remark-toc"; // Add this import
+
+const config = withMDX({
+extension: /\.mdx?/,
+options: {
+remarkPlugins: [remarkGfm, remarkPrism, remarkMath, remarkToc], // Update the list of plugins
+rehypePlugins: [rehypeKatex],
+},
+});
+
+export default config({
+  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
+  reactStrictMode: true,
+  images: {
+    domains: ["github.com"],
+  },
+});
+
+````
+</TitleCode>
+<br />
+#### 3. Refresh the server
+We can refresh the server and run it again using the command
+```bash
+yarn dev
+````
+
+Now whenever all the pages can have an automatically generated table of contents.
+
+<br/>
+<br/>
+<br/>
+<NextPage
+  nextPage="Deployment Guides"
+  previousPage="Creating your own components"
+  prevHref="/docs/customization/adding-components"
+  nextHref="/docs/deployment/"
+/>
 </MDXDocs>

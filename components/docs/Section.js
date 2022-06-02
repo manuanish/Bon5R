@@ -5,8 +5,8 @@ import * as React from "react";
 export default function Section(props) {
   const router = useRouter();
 
-  console.log(router.pathname)
-  console.log(props.href)
+  console.log(router.pathname);
+  console.log(props.href);
 
   const onButtonClick = async () => {
     localStorage.setItem(
@@ -25,7 +25,9 @@ export default function Section(props) {
         </h5>
       </div>
     );
-  } else if (router.pathname.substring(0, router.pathname.lastIndexOf('/')) == props.href) {
+  } else if (
+    router.pathname.substring(0, router.pathname.lastIndexOf("/")) == props.href
+  ) {
     return (
       <button onClick={onButtonClick}>
         <h5 className="mb-8 lg:mb-3 font-semibold text-orange-400 hover:text-orange-500 mt-10 ">
@@ -44,5 +46,4 @@ export default function Section(props) {
       </button>
     );
   }
-
 }

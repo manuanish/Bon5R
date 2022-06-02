@@ -1,6 +1,6 @@
 .shape {
   position: absolute;
-  border-top: 20px solid #EC4899;
+  border-top: 20px solid #ec4899;
   width: calc(100% - 50px);
   max-width: 500px;
   transform: rotate(-5deg);

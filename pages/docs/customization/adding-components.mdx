@@ -5,7 +5,7 @@ import AuthorModified from "@components/docs/bon5r/AuthorModified";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import DocsAd from "@components/docs/DocsAd";
-import TitleCode from "@components/docs/TitleCode"
+import TitleCode from "@components/docs/TitleCode";
 import Demo from "@components/docs/Demo";
 import Alert from "@components/docs/Alert";
 
@@ -19,42 +19,62 @@ import Alert from "@components/docs/Alert";
   ---
   In this page we will look at an example that describes how we might create a Bon5R component.
   <br/>
-  ## Creating the `...` component
-  Let's begin by locating where the source code for the `Author` component is located. If we navigate to the `components`
-  folder we can see that all the built-in components are stored there. Let's take a look at the `components/Author.js`
+  ## Creating the `TitleCode` component
+  Let's begin by locating where all the components are located. If we navigate to the `components` folder we can see
+  a list of the built in components. From here, we can create a new file called `TitleCode.js` and start creating our component
   <br/>
-  <TitleCode title='[...].js'>
-  ```jsx
-  import * as React from "react";
-  import Image from "next/image";
-
-  ...
-  ```
-  <br/>
+  <TitleCode title='TitleCode.js'>
+    ```jsx
+    export default function TitleCode(props) {
+      return (
+        <div className="flex flex-col overflow-hidden">
+          <div className="bg-slate-800 w-fit p-2 pl-4 pr-4 rounded-tl-md rounded-tr-md mb-[-5px] z-10">
+            <code className="">{props.title}</code>
+          </div>
+          <div>{props.children}</div>
+        </div>
+      );
+    }
+    ```
   </TitleCode>
-  From here we can change the code and make it fit our theme/needs. In this example I have decided to include a way to "map" authors into the component so that more than one author can write a page.
-
-  ### Modified `Author` component
-  <TitleCode title="[...].js*">
-  ```jsx
-  import Image from "next/image";
-  import Link from "next/link";
-
-  ...
-  ```
-  </TitleCode>
-  We will now look at how we might use this modified component in our application
+  We will now look at how we might use this customized component in our application
   ### Usage
   We can import the component exactly as before and it should work.
-  <TitleCode title="[...].mdx">
+  <TitleCode title="title-code-demo.mdx">
   ```jsx
-  ...
+  import TitleCode from "@components/docs/TitleCode";
+
+  <TitleCode title="collatz.py">
+    ~~~py
+    def collatz(n):
+      if n %% 2 == 0:
+        return n / 2
+      else:
+        return 3 * n + 1
+    ~~~
+  </TitleCode>
   ```
   </TitleCode>
   <br/>
   This should give us the following
   <Demo>
+  <TitleCode title="collatz.py">
+    ~~~py
+    def collatz(n):
+      if n %% 2 == 0:
+        return n / 2
+      else:
+        return 3 * n + 1
+    ~~~
+  </TitleCode>
   </Demo>
+  <br/>
+  ### Props
+
+| Name    | Type     | Default | Description              |
+| ------- | -------- | ------- | ------------------------ |
+| `title` | `string` | `""`    | Title of the code block. |
+
   <br/>
   <br/>
   <br/>

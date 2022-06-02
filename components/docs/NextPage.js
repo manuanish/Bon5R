@@ -22,10 +22,7 @@ export default function NextPage(props) {
 
   return (
     <div className="flex flex-row p-4 justify-evenly gap-4 mt-5 w-full">
-      <button
-        className="justify-self-start"
-        onClick={onButtonClickPrev}
-      >
+      <button className="justify-self-start" onClick={onButtonClickPrev}>
         <div className="font-normal text-slate-500 hover:text-orange-400">
           {" "}
           {"<-"} {props.previousPage}

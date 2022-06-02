@@ -76,7 +76,7 @@ input:focus {
 
 .markdown-body hr {
   height: 1px;
-  background: rgba(255, 255, 255, 0.1)
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .markdown-body h1 {
@@ -106,5 +106,5 @@ input:focus {
 }
 
 .markdown-body th {
-  @apply bg-slate-800 border border-slate-700
+  @apply bg-slate-800 border border-slate-700;
 }

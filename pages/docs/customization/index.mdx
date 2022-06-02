@@ -5,7 +5,7 @@ import Author from "@components/docs/bon5r/Author";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import DocsAd from "@components/docs/DocsAd";
-import TitleCode from "@components/docs/TitleCode"
+import TitleCode from "@components/docs/TitleCode";
 import Demo from "@components/docs/Demo";
 import Alert from "@components/docs/Alert";
 
@@ -24,6 +24,15 @@ import Alert from "@components/docs/Alert";
   If you are trying to customize Bon5R, I would strongly reccommend learning tailwind classes, directives as it improves the development experience tremendously.
   If you want to learn more, visit the [Tailwindcss documentation](https://tailwindcss.com/docs/installation).
   <br/>
+  #### ⚙️ JS Config
+  Take for example we are trying to import the following component
+  ```jsx
+  import Author from "@components/Author"
+  ```
+
+Notice that the import path for the function is **not relative**.
+Wherever your MDX file is located in the `/pages` directory the import statement does not change. The settings for this is located in the `jsconfig.json` file.
+
   <br/>
   <br/>
   <NextPage

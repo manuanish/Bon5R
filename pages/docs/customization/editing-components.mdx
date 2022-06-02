@@ -5,7 +5,7 @@ import AuthorModified from "@components/docs/bon5r/AuthorModified";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import DocsAd from "@components/docs/DocsAd";
-import TitleCode from "@components/docs/TitleCode"
+import TitleCode from "@components/docs/TitleCode";
 import Demo from "@components/docs/Demo";
 import Alert from "@components/docs/Alert";
 
@@ -28,69 +28,71 @@ import Alert from "@components/docs/Alert";
   import * as React from "react";
   import Image from "next/image";
 
-  function Author(props) {
-    return (
-      <div>
-        <div className="flex text-[gray]">
-          <div className="mt-[4px]">
-            <Image
-              alt="avatar"
-              width="20"
-              height="20"
-              className=" rounded-lg"
-              src={"https://github.com/" + props.displayName + ".png"}
-            />
-          </div>
-          &#8198;&#8198;&#8198;
-          <a
-            href={"https://github.com/" + props.displayName}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <strong>
-              <span>{props.author}</span>
-            </strong>
-          </a>
-          &#8198;&#8198;—&#8198;&#8198;<span>{props.date}</span>
+function Author(props) {
+return (
+
+<div>
+  <div className="flex text-[gray]">
+    <div className="mt-[4px]">
+      <Image
+        alt="avatar"
+        width="20"
+        height="20"
+        className=" rounded-lg"
+        src={"https://github.com/" + props.displayName + ".png"}
+      />
+    </div>
+    &#8198;&#8198;&#8198;
+    <a
+      href={"https://github.com/" + props.displayName}
+      target="\_blank"
+      rel="noreferrer"
+    >
+      <strong>
+        <span>{props.author}</span>
+      </strong>
+    </a>
+    &#8198;&#8198;—&#8198;&#8198;<span>{props.date}</span>
+  </div>
+</div>
+); }
+
+export default Author;
+
+````
+<br/>
+</TitleCode>
+From here we can change the code and make it fit our theme/needs. In this example I have decided to include a way to "map" authors into the component so that more than one author can write a page.
+
+### Modified `Author` component
+<TitleCode title="Author.js*">
+```jsx
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Author(props){
+  return (
+    <div className="flex gap-1">
+    <span className="text-slate-700 text-lg">Written by&nbsp;</span>
+      {props.contributors.map((userName) => (
+        <div className="cursor-pointer rounded-full border-2 w-[30px] h-[30px] border-slate-500 hover:border-slate-400">
+          <Link href={`https://github.com/${userName}`} passHref>
+              <Image
+                alt={userName}
+                width="30"
+                height="30"
+                className="rounded-full"
+                src={`https://github.com/${userName}.png`}
+              />
+          </Link>
         </div>
-      </div>
-    );
-  }
+      ))}
+      &nbsp;<span className="text-slate-400 text-lg">&#8212;&nbsp; {props.readTime} min read</span>
+    </div>
+  );
+}
+````
 
-  export default Author;
-  ```
-  <br/>
-  </TitleCode>
-  From here we can change the code and make it fit our theme/needs. In this example I have decided to include a way to "map" authors into the component so that more than one author can write a page.
-
-  ### Modified `Author` component
-  <TitleCode title="Author.js*">
-  ```jsx
-  import Image from "next/image";
-  import Link from "next/link";
-
-  export default function Author(props){
-    return (
-      <div className="flex gap-1">
-      <span className="text-slate-500 text-lg">Written by&nbsp;</span>
-        {props.contributors.map((userName) => (
-          <div className="cursor-pointer rounded-full border-2 w-[30px] h-[30px] border-slate-500 hover:border-slate-400">
-            <Link href={`https://github.com/${userName}`} passHref>
-                <Image
-                  alt={userName}
-                  width="30"
-                  height="30"
-                  className="rounded-full"
-                  src={`https://github.com/${userName}.png`}
-                />
-            </Link>
-          </div>
-        ))}
-        &nbsp;<span className="text-slate-700 text-lg">&#8212;&nbsp; {props.readTime} min read</span>
-      </div>
-    );
-  }
-  ```
   </TitleCode>
   We will now look at how we might use this modified component in our application
   ### Usage
@@ -107,6 +109,14 @@ import Alert from "@components/docs/Alert";
   <Demo>
     <AuthorModified contributors={["manuanish", "github"]} readTime={5}/>
   </Demo>
+  <br/>
+  ### Props
+
+| Name           | Type      | Default | Description                                                           |
+| -------------- | --------- | ------- | --------------------------------------------------------------------- |
+| `contributors` | `list`    | `[]`    | List of contributors (strings) which <br/>connect to GitHub profiles. |
+| `readTime`     | `integer` | `null`  | Approximate time (in minutes) to complete <br/> reading the page.     |
+
   <br/>
   <br/>
   <br/>

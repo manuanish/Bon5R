@@ -39,7 +39,11 @@ export default function Sidebar(props) {
           <div className="mt-[-40px] pt-6 pb-6 bg-transparent bg-gradient-to-b from-slate-900 to-transparent"></div>
         </div>
         <div className="pt-[250px]">
-          <Section icon={<DownloadIcon />} title="Getting Started" href="/docs/getting-started"/>
+          <Section
+            icon={<DownloadIcon />}
+            title="Getting Started"
+            href="/docs/getting-started"
+          />
           <SidebarButton
             pagePath={props.href}
             href="/docs/getting-started/installation"
@@ -50,7 +54,11 @@ export default function Sidebar(props) {
             href="/docs/getting-started/next-steps"
             pageTitle="Next Steps"
           />
-          <Section icon={<PackageIcon />} title="Built-in Components" href="/docs/component-docs"/>
+          <Section
+            icon={<PackageIcon />}
+            title="Built-in Components"
+            href="/docs/component-docs"
+          />
           <SidebarButton
             pagePath={props.href}
             href="/docs/component-docs/author"
@@ -86,7 +94,11 @@ export default function Sidebar(props) {
             href="/docs/component-docs/post"
             pageTitle="Post"
           />
-          <Section icon={<PaintbrushIcon />} title="Customization" href="/docs/customization"/>
+          <Section
+            icon={<PaintbrushIcon />}
+            title="Customization"
+            href="/docs/customization"
+          />
           <SidebarButton
             pagePath={props.href}
             href="/docs/customization/editing-components"
@@ -102,7 +114,11 @@ export default function Sidebar(props) {
             href="/docs/customization/adding-markdown-plugins"
             pageTitle="Adding Remark/Rehype Plugins"
           />
-          <Section icon={<RocketIcon />} title="Deployment Guides" href="/docs/deployment"/>
+          <Section
+            icon={<RocketIcon />}
+            title="Deployment Guides"
+            href="/docs/deployment"
+          />
           <SidebarButton
             pagePath={props.href}
             href="/docs/deployment/vercel"
@@ -118,7 +134,11 @@ export default function Sidebar(props) {
             href="/docs/deployment/github-pages"
             pageTitle="Github Pages"
           />
-          <Section icon={<GitPullRequestIcon />} title="Contributing" href="/docs/contributing"/>
+          <Section
+            icon={<GitPullRequestIcon />}
+            title="Contributing"
+            href="/docs/contributing"
+          />
           <SidebarButton
             pagePath={props.href}
             href="/docs/contributing/contributing-guide"

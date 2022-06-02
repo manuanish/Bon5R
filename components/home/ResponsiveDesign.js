@@ -36,8 +36,7 @@ export default function ResponsiveDesign() {
             <path d="M0 0L3 3L0 6"></path>
           </svg>
         </a>
-        <div className="md:p-20 pt-10 md:flex md:justify-evenly w-full mt-10 overflow-x-hidden">
-        </div>
+        <div className="md:p-20 pt-10 md:flex md:justify-evenly w-full mt-10 overflow-x-hidden"></div>
       </div>
       <div className="border-b border-slate-700 opacity-50"></div>
     </div>
