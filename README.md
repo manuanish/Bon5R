@@ -12,10 +12,10 @@
   <p align="center">
     Create static, blog-aware websites with pure MDX.
     <br />
-    <a href="https://bon5r.com/docs/getting-started/installation"><strong>Explore the docs »</strong></a>
+    <a href="https://bon5r.com/docs/getting-started/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://bon5r.com/playground">View Demo</a>
     ·
     <a href="https://github.com/manuanish/Bon5R/issues">Report Bug</a>
     ·
@@ -73,10 +73,10 @@ Of course, no one template will serve all projects since your needs may be diffe
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
 - [Next.js](https://nextjs.org/)
 - [MDX](https://mdxjs.com)
+- [Tailwindcss](https://tailwindcss.com/)
+- [geist-ui](https://geist-ui.dev/en-us)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -126,7 +126,12 @@ And thats it! you can view the server by going to http://localhost:3000.
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+As of right now, here is the current preview of the Bon5R template website.
+
+![](public/docs/bon5r-light.png)
+
+![](public/docs/bon5r-dark.png)
+
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -136,13 +141,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-  - [ ] Chinese
-  - [ ] Spanish
+- [x] Release Bon5R v2.0.0
+- [ ] Update documentation for Bon5R v2.0.0
+  - [ ] Deployment documentation
+  - [ ] Contributing documentation
+- [ ] Add Additional Templates for Bon5R
 
 See the [open issues](https://github.com/manuanish/Bon5R/issues) for a full list of proposed features (and known issues).
 
@@ -177,42 +180,10 @@ Distributed under the MIT License. See the `LICENSE` file for more information.
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Your Name - [@manusanish](https://twitter.com/manusanish) - manusanish@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/manuanish/bon5r](https://github.com/manuanish/bon5r)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
-
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-- [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-- [Malven's Grid Cheatsheet](https://grid.malven.co/)
-- [Img Shields](https://shields.io)
-- [GitHub Pages](https://pages.github.com)
-- [Font Awesome](https://fontawesome.com)
-- [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
