@@ -6,7 +6,7 @@ import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
-import Demo from "@components/docs/Demo";
+import ToggleDemo from "@components/docs/ToggleDemo";
 import Alert from "@components/docs/Alert";
 
 <PageTitle title="Header" />
@@ -31,9 +31,9 @@ import Alert from "@components/docs/Alert";
   <br/>
   <br/>
   This we be rendered as shown:
-  <Demo>
+  <ToggleDemo padding={"10"} title="Header Demo" childrenDark={<Header>🔥 Welcome to Bon5R!</Header>}childrenLight={
     <Header>🔥 Welcome to Bon5R!</Header>
-  </Demo>
+  }/>
   <br/>
 
 {" "}

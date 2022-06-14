@@ -6,7 +6,7 @@ import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import DocsAd from "@components/docs/DocsAd";
 import TitleCode from "@components/docs/TitleCode";
-import Demo from "@components/docs/Demo";
+import ToggleDemo from "@components/docs/ToggleDemo";
 import Alert from "@components/docs/Alert";
 
 <PageTitle title="Component Documentation" />
@@ -27,21 +27,23 @@ import Alert from "@components/docs/Alert";
   import Author from "@components/Author";
 
   <Author
-    author="Manu Anish"
-    displayName="manuanish"
+    userName="manuanish"
+    readTime={5}
     date="3/14/15"
   />
   ```
   </TitleCode>
   <br/>
   This we be rendered as the following:
-  <Demo>
-    <Author
-      author="Manu Anish"
-      displayName="manuanish"
-      date="3/14/15"
-    />
-  </Demo>
+  <ToggleDemo padding={"10"} title="Author Demo" childrenLight={<Author
+    userName="manuanish"
+    readTime={5}
+    date="3/14/15"
+  />} childrenDark={<Author
+    userName="manuanish"
+    readTime={5}
+    date="3/14/15"
+  />}/>
   <br />
   #### ⚙️ JS Config
   Notice that the import path for the function is **not relative**.

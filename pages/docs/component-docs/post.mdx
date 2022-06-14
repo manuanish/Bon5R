@@ -6,7 +6,7 @@ import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
-import Demo from "@components/docs/Demo";
+import ToggleDemo from "@components/docs/ToggleDemo";
 import Alert from "@components/docs/Alert";
 
 <PageTitle title="Post" />
@@ -38,15 +38,19 @@ import Alert from "@components/docs/Alert";
   <Alert type="warning">The `href` prop should not be left empty. This may cause errors.</Alert>
   <br/>
   This we be rendered as shown:
-  <Demo>
-    <Post
-      title="Hello World!"
-      date="3/14/15"
-      description="This is an example post, demonstrating the power
-      of Bon5R. It displays some features that are included in this project."
-      href="#"
-    />
-  </Demo>
+  <ToggleDemo padding={"10"} title="Post Demo" childrenLight={<Post
+    title="Hello World!"
+    date="3/14/15"
+    description="This is an example post, demonstrating the power
+    of Bon5R. It displays some features that are included in this project."
+    href="#"
+  />} childrenDark={<Post
+    title="Hello World!"
+    date="3/14/15"
+    description="This is an example post, demonstrating the power
+    of Bon5R. It displays some features that are included in this project."
+    href="#"
+  />}/>
   <br/>
 
 {" "}

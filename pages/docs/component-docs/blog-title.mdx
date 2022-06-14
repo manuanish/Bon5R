@@ -6,7 +6,7 @@ import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
-import Demo from "@components/docs/Demo";
+import ToggleDemo from "@components/docs/ToggleDemo";
 
 <PageTitle title="BlogTitle" />
 
@@ -26,25 +26,30 @@ import Demo from "@components/docs/Demo";
 
   <BlogTitle
     title="🔥 My Blog Title"
-    subTitle="A short description of the blog"
-  />
+  >
+  A short description of the blog
+  </BlogTitle>
   ```
   </TitleCode>
   <br/>
   This we be rendered as shown:
-  <Demo>
+  <ToggleDemo padding={"10"} title="BlogTitle Demo" childrenDark={<BlogTitle
+    title="🔥 My Blog Title"
+  >
+  A short description of the blog
+  </BlogTitle>}childrenLight={
     <BlogTitle
       title="🔥 My Blog Title"
-      subTitle="A short description of the blog"
-    />
-  </Demo>
+    >
+    A short description of the blog
+    </BlogTitle>
+  }/>
   <br />
   ### Props
 
-| Name       | Type     | Default | Description                    |
-| ---------- | -------- | ------- | ------------------------------ |
-| `title`    | `string` | `""`    | This title of the blog.        |
-| `subTitle` | `string` | `""`    | This is sub-title of the blog. |
+| Name    | Type     | Default | Description             |
+| ------- | -------- | ------- | ----------------------- |
+| `title` | `string` | `""`    | This title of the blog. |
 
   <br />
   <NextPage

@@ -1,13 +1,14 @@
 import * as React from "react";
 import Link from "next/link";
+import { Button as GeistButton } from "@geist-ui/core";
 
 function Button(props) {
   return (
-    <div>
+    <div id="button">
       <Link href={props.href} passHref>
-        <button className="bg-orange-50 p-4 rounded-lg hover:bg-orange-500 hover:text-white duration-75 mb-10 mt-10">
+        <GeistButton ghost type="success">
           {props.text}
-        </button>
+        </GeistButton>
       </Link>
     </div>
   );

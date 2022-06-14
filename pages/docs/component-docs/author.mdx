@@ -6,7 +6,7 @@ import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
-import Demo from "@components/docs/Demo";
+import ToggleDemo from "@components/docs/ToggleDemo";
 
 <PageTitle title="Author" />
 
@@ -25,29 +25,31 @@ import Demo from "@components/docs/Demo";
   import Author from "@components/Author";
 
   <Author
-    author="Manu Anish"
-    displayName="manuanish"
+    userName="manuanish"
+    readTime={5}
     date="3/14/15"
   />
   ```
   </TitleCode>
   <br/>
   This we be rendered as shown:
-  <Demo>
-    <Author
-      author="Manu Anish"
-      displayName="manuanish"
-      date="3/14/15"
-    />
-  </Demo>
+  <ToggleDemo padding={"10"} title="Author Demo" childrenLight={<Author
+    userName="manuanish"
+    readTime={5}
+    date="3/14/15"
+  />} childrenDark={<Author
+    userName="manuanish"
+    readTime={5}
+    date="3/14/15"
+  />}/>
   <br />
   ### Props
 
-| Name          | Type     | Default | Description                                      |
-| ------------- | -------- | ------- | ------------------------------------------------ |
-| `author`      | `string` | `""`    | This is the value that will be name of the link. |
-| `displayName` | `string` | `""`    | This is the GitHub username of the author.       |
-| `data`        | `string` | `""`    | This is the date of posting.                     |
+| Name       | Type      | Default | Description                                               |
+| ---------- | --------- | ------- | --------------------------------------------------------- |
+| `readTime` | `integer` | `{}`    | This is the the approximated reading time of the article. |
+| `userName` | `string`  | `""`    | This is the GitHub username of the author.                |
+| `date`     | `string`  | `""`    | This is the date of posting.                              |
 
   <br />
   <br />

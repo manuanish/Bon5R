@@ -6,7 +6,7 @@ import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
-import Demo from "@components/docs/Demo";
+import ToggleDemo from "@components/docs/ToggleDemo";
 import Alert from "@components/docs/Alert";
 
 <PageTitle title="Button" />
@@ -35,12 +35,15 @@ import Alert from "@components/docs/Alert";
   <Alert type="warning">The `href` prop should not be left empty. This may cause errors.</Alert>
   <br/>
   This we be rendered as shown:
-  <Demo>
+  <ToggleDemo padding={"10"} title="Button Demo" childrenDark={<Button
+    href="#button"
+    text="My MDX Button"
+  />}childrenLight={
     <Button
-      href="#"
+      href="#button"
       text="My MDX Button"
     />
-  </Demo>
+  }/>
   <br/>
 
 {" "}

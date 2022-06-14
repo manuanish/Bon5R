@@ -30,11 +30,11 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
 const config = withMDX({
-  extension: /\.mdx?/,
-  options: {
-    remarkPlugins: [remarkGfm, remarkPrism, remarkMath],
-    rehypePlugins: [rehypeKatex],
-  },
+extension: /\.mdx?/,
+options: {
+remarkPlugins: [remarkGfm, remarkPrism, remarkMath],
+rehypePlugins: [rehypeKatex],
+},
 });
 
 export default config({
@@ -72,11 +72,11 @@ import rehypeKatex from "rehype-katex";
 import remarkToc from "remark-toc"; // Add this import
 
 const config = withMDX({
-  extension: /\.mdx?/,
-  options: {
-    remarkPlugins: [remarkGfm, remarkPrism, remarkMath, remarkToc], // Update the list of plugins
-    rehypePlugins: [rehypeKatex],
-  },
+extension: /\.mdx?/,
+options: {
+remarkPlugins: [remarkGfm, remarkPrism, remarkMath, remarkToc], // Update the list of plugins
+rehypePlugins: [rehypeKatex],
+},
 });
 
 export default config({
