@@ -1,16 +1,10 @@
 <br/>
 
-![](https://img.shields.io/npm/dt/create-bon5r-app?label=NPM%20Downloads&style=for-the-badge)
-![](https://img.shields.io/github/stars/manuanish/bon5r?style=for-the-badge)
-![](https://img.shields.io/github/issues/manuanish/bon5r?style=for-the-badge)
-![](https://img.shields.io/github/forks/manuanish/bon5r?style=for-the-badge)
-![](https://img.shields.io/github/license/manuanish/bon5r?style=for-the-badge)
-
 <div id="top"></div>
 <br />
 <div align="center">
   <a href="https://bon5r.com">
-    <img src="public/bon5r.svg" width="80"/>
+    <img src="public/images/readme/repository-open-graph-template.png"/>
   </a>
 
   <h3 align="center"><b>Bon5R</b></h3>
@@ -28,6 +22,12 @@
     <a href="https://github.com/manuanish/Bon5R/discussions">Request Feature</a>
   </p>
 </div>
+
+![](https://img.shields.io/npm/dt/create-bon5r-app?label=NPM%20Downloads&style=for-the-badge)
+![](https://img.shields.io/github/stars/manuanish/bon5r?style=for-the-badge)
+![](https://img.shields.io/github/issues/manuanish/bon5r?style=for-the-badge)
+![](https://img.shields.io/github/forks/manuanish/bon5r?style=for-the-badge)
+![](https://img.shields.io/github/license/manuanish/bon5r?style=for-the-badge)
 
 <!-- TABLE OF CONTENTS -->
 <details>
