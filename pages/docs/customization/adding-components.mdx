@@ -1,12 +1,11 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
 import Contributors from "@components/docs/Contributors";
-import AuthorModified from "@components/docs/bon5r/AuthorModified";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import DocsAd from "@components/docs/DocsAd";
 import TitleCode from "@components/docs/TitleCode";
-import Demo from "@components/docs/Demo";
+import ToggleDemoChild from "@components/docs/ToggleDemoChild";
 import Alert from "@components/docs/Alert";
 
 <PageTitle title="Creating your own components" />
@@ -57,8 +56,7 @@ import Alert from "@components/docs/Alert";
   </TitleCode>
   <br/>
   This should give us the following
-  <Demo>
-  <TitleCode title="collatz.py">
+  <ToggleDemoChild padding={10} title="TitleCode Demo"><TitleCode title="collatz.py">
     ~~~py
     def collatz(n):
       if n %% 2 == 0:
@@ -66,8 +64,7 @@ import Alert from "@components/docs/Alert";
       else:
         return 3 * n + 1
     ~~~
-  </TitleCode>
-  </Demo>
+  </TitleCode></ToggleDemoChild>
   <br/>
   ### Props
 
