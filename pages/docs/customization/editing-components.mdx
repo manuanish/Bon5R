@@ -1,13 +1,13 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
 import Contributors from "@components/docs/Contributors";
-import AuthorModified from "@components/docs/bon5r/AuthorModified";
+import FooterModified from "@components/docs/bon5r/FooterModified";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import DocsAd from "@components/docs/DocsAd";
 import TitleCode from "@components/docs/TitleCode";
-import Demo from "@components/docs/Demo";
 import Alert from "@components/docs/Alert";
+import ToggleDemo from "@components/docs/ToggleDemo";
 
 <PageTitle title="Editing Built in components" />
 
@@ -19,79 +19,38 @@ import Alert from "@components/docs/Alert";
   ---
   In this page we will look at an example that describes how we might customize a Bon5R component.
   <br/>
-  ## Customizing the `Author` component
-  Let's begin by locating where the source code for the `Author` component is located. If we navigate to the `components`
-  folder we can see that all the built-in components are stored there. Let's take a look at the `components/Author.js`
+  ## Customizing the `Footer` component
+  Let's begin by locating where the source code for the `Footer` component is located. If we navigate to the `components`
+  folder we can see that all the built-in components are stored there. Let's take a look at the `components/Footer.js`
   <br/>
-  <TitleCode title='Author.js'>
+  <TitleCode title='Footer.js'>
   ```jsx
-  import * as React from "react";
-  import Image from "next/image";
-
-function Author(props) {
-return (
-
-<div>
-  <div className="flex text-[gray]">
-    <div className="mt-[4px]">
-      <Image
-        alt="avatar"
-        width="20"
-        height="20"
-        className=" rounded-lg"
-        src={"https://github.com/" + props.displayName + ".png"}
-      />
-    </div>
-    &#8198;&#8198;&#8198;
-    <a
-      href={"https://github.com/" + props.displayName}
-      target="\_blank"
-      rel="noreferrer"
-    >
-      <strong>
-        <span>{props.author}</span>
-      </strong>
-    </a>
-    &#8198;&#8198;—&#8198;&#8198;<span>{props.date}</span>
-  </div>
-</div>
-); }
-
-export default Author;
-
+  export default function Footer(props) {
+    return (
+      <div className="text-center mb-5 mt-5 text-neutral-300">
+        {props.children}
+      </div>
+    );
+  }
 ````
 <br/>
 </TitleCode>
-From here we can change the code and make it fit our theme/needs. In this example I have decided to include a way to "map" authors into the component so that more than one author can write a page.
-
+From here we can change the code and make it fit our theme/needs. In this example I have made it a link to a GitHub account
 ### Modified `Author` component
 <TitleCode title="Author.js*">
 ```jsx
-import Image from "next/image";
 import Link from "next/link";
 
-export default function Author(props){
+export default function Footer(props) {
   return (
-    <div className="flex gap-1">
-    <span className="text-slate-700 text-lg">Written by&nbsp;</span>
-      {props.contributors.map((userName) => (
-        <div className="cursor-pointer rounded-full border-2 w-[30px] h-[30px] border-slate-500 hover:border-slate-400">
-          <Link href={`https://github.com/${userName}`} passHref>
-              <Image
-                alt={userName}
-                width="30"
-                height="30"
-                className="rounded-full"
-                src={`https://github.com/${userName}.png`}
-              />
-          </Link>
-        </div>
-      ))}
-      &nbsp;<span className="text-slate-400 text-lg">&#8212;&nbsp; {props.readTime} min read</span>
-    </div>
+    <Link href={`https://github.com/${props.userName}`}>
+      <div className="text-center mb-5 mt-5 text-neutral-300">
+        {props.children}
+      </div>
+    </Link>
   );
 }
-````
+```
 
   </TitleCode>
   We will now look at how we might use this modified component in our application
@@ -99,23 +58,24 @@ export default function Author(props){
   We can import the component exactly as before and it should work.
   <TitleCode title="author-modified-demo.mdx">
   ```jsx
-  import Author from "@components/Author";
+  import Footer from "@components/Footer";
 
-  <Author contributors={["manuanish", "github"]} readTime={5} />
+  <Footer userName="manuanish">Code with ❤️ by @manuanish</Footer>
   ```
   </TitleCode>
   <br/>
   This should give us the following
-  <Demo>
-    <AuthorModified contributors={["manuanish", "github"]} readTime={5}/>
-  </Demo>
+  <ToggleDemo title="FooterModified Demo" childrenLight={
+    <FooterModified userName="manuanish">Code with ❤️ by @manuanish</FooterModified>
+  } childrenDark={
+    <FooterModified userName="manuanish">Code with ❤️ by @manuanish</FooterModified>
+  } />
   <br/>
   ### Props
 
 | Name           | Type      | Default | Description                                                           |
 | -------------- | --------- | ------- | --------------------------------------------------------------------- |
-| `contributors` | `list`    | `[]`    | List of contributors (strings) which <br/>connect to GitHub profiles. |
-| `readTime`     | `integer` | `null`  | Approximate time (in minutes) to complete <br/> reading the page.     |
+| `userName` | `string`    | `""`    | Desired GitHub username. |
 
   <br/>
   <br/>
