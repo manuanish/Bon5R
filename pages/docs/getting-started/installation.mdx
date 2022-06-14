@@ -6,6 +6,7 @@ import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
 import DocsAd from "@components/docs/DocsAd";
 import Alert from "@components/docs/Alert";
+import ToggleDemo from "@components/docs/ToggleDemo";
 
 <PageTitle title="Installation" />
 
@@ -59,10 +60,7 @@ import Alert from "@components/docs/Alert";
   And thats it! 🎉 you can view the website at http://localhost:3000. The website hot-reloads ⚡️ when you change the code so you don't have to constanly refresh.
   <br />
   <br />
-  <DocsImage src="/docs/bon5r-installation.png" width="2880" height="1630" caption="http://localhost:3000"/>
-  <br />
-  <br />
-  <br />
+  <ToggleDemo title="Installation Demo" childrenLight={<DocsImage src="/docs/bon5r-light.png" width="2880" height="1630"/>} childrenDark={<DocsImage src="/docs/bon5r-dark.png" width="2880" height="1630"/>}/>
   <NextPage
     nextPage="Next Steps"
     previousPage="Getting Started"
