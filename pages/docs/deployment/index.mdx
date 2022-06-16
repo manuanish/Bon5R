@@ -1,10 +1,9 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
-import Author from "@components/docs/Author";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
-import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
+import Contributors from "@components/docs/Contributors";
 
 <PageTitle title="Deployment Guides" />
 
@@ -12,7 +11,26 @@ import DocsAd from "@components/docs/DocsAd";
 <MDXDocs>
   <DocsAd />
   # Deployment Guides
-  <Author author="Manu Anish" displayName="manuanish" date="24/5/22" />
+  <Contributors contributors={["manuanish"]} readTime={1} />
+  ---
+  ### 🚀 Server Providers
+  Currently, Bon5R supports three main deployment platforms.
+  - [Vercel](https://vercel.com)
+  - [Heroku](https://heroku.com)
+  - [Github Pages](https://pages.github.com)
+  - <span className="text-slate-500">Your provider here?</span>
+
+  If you want to know other ways to deploy a Bon5R app/want to add your own provider here, follow these steps:
+
+  - Create an [issue](https://github.com/manuanish/Bon5R/issues) describing your suggestion.
+  - Link a pull request to your issue and wait for a code reviewer to pass all checks.
+
+  Contributions are always welcome!
+  <br/>
+  ### Demo
+  For a live demo of an application bootstrapped with `create-bon5r-app` take a look at the following https://create-bon5r-app.vercel.app/
+  <br />
+  <br />
   <br />
   <NextPage
     nextPage="Vercel"
