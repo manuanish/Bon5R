@@ -7,8 +7,8 @@ export default function Handcrafted() {
   };
   return (
     <div className="z-50">
-      <div className="flex flex-row p-20 bg-transparent bg-gradient-to-t from-slate-900 via-slate-900 to-transparent w-full shadow-2xl">
-        <div className="grow mt-[100px] overflow-scroll invisible md:visible w-[0px] md:w-full lg:w-fit z-50">
+      <div className="flex flex-row sm:p-20 p-5 bg-transparent bg-gradient-to-t from-slate-900 via-slate-900 to-transparent w-full shadow-2xl">
+        <div className="grow mt-[100px] overflow-auto invisible md:visible w-[0px] md:w-full lg:w-fit z-50">
           <div className="flex gap-5">
             <div className="group hover:bg-white duration-150 p-4 min-w-[350px] w-[350px] min-h-[340px] bg-slate-800 rounded-lg markdown-body text-slate-500 shadow-2xl z-50">
               <p className="group-hover:text-black duration-150 font-bold text-2xl">
@@ -39,7 +39,7 @@ export default function Handcrafted() {
               </div>
               <div className="shadow-2xl group">
                 <div className="p-4 w-[310px] h-[100px] bg-slate-800 duration-150 rounded-lg text-slate-500 hover:bg-[#282C34]">
-                  <pre>
+                  <pre style={{ overflow: "hidden" }}>
                     <code className="text-slate-600 group-hover:text-[#C678DD] duration-150">
                       function
                     </code>
@@ -81,7 +81,7 @@ export default function Handcrafted() {
             </div>
           </div>
           <div className="flex justify-center text-slate-700 mt-20">
-            &#8593; Hover to preview
+            Hover/Click to preview
           </div>
         </div>
         <div className="md:max-w-[510px] lg:max-w-[510px] w-full">
@@ -106,11 +106,11 @@ export default function Handcrafted() {
           </div>
           <a
             className="float-right group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-700 text-slate-100 hover:bg-slate-600 hover:text-white focus:ring-slate-500 mt-8"
-            href="/docs/component-docs/author"
+            href="/docs/component-docs"
           >
             Learn more<span className="sr-only"></span>
             <svg
-              className="overflow-visible ml-3 text-slate-500 group-hover:text-slate-400"
+              className="overflow-auto ml-3 text-slate-500 group-hover:text-slate-400"
               width="3"
               height="6"
               viewBox="0 0 3 6"
@@ -123,7 +123,7 @@ export default function Handcrafted() {
               <path d="M0 0L3 3L0 6"></path>
             </svg>
           </a>
-          <div className="md:p-20 pt-10 md:flex md:justify-evenly w-full mt-10 overflow-scroll"></div>
+          <div className="md:p-20 pt-10 md:flex md:justify-evenly w-full mt-10 overflow-auto"></div>
         </div>
       </div>
       <div className="border-b border-slate-700 opacity-50"></div>

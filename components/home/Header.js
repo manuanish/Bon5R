@@ -20,7 +20,7 @@ export default function Header() {
       </div>
       <div
         className="flex items-center text-slate-200"
-        style={{ overflowX: "scroll" }}
+        style={{ overflowX: "auto" }}
       >
         <div className="flex items-center">
           <nav>

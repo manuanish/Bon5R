@@ -2,7 +2,7 @@ import Twemoji from "@components/Twemoji";
 
 export default function RenderedOutput() {
   return (
-    <div className="p-4 m-4 border border-slate-600 rounded-xl bg-slate-900 basis-1/2 shadow-2xl shadow-slate-900 lg:max-w-[700px]">
+    <div className="p-4 sm:m-4 m-0 mt-5 border border-slate-600 rounded-xl bg-slate-900 basis-1/2 shadow-2xl shadow-slate-900 sm:overflow-hidden overflow-y-auto overflow-x-hidden lg:max-w-[700px] max-h-[300px] sm:max-h-full">
       <div className="text-slate-500 pb-2">http://localhost:3000</div>
       <div className="bg-slate-800 rounded-lg">
         <div

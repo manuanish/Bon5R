@@ -1,19 +1,40 @@
 import Sidebar from "@components/docs/Sidebar";
 import MDXDocs from "@components/docs/MDXDocs";
-import Author from "@components/docs/Author";
 import NextPage from "@components/docs/NextPage";
 import PageTitle from "@components/docs/PageTitle";
-import TitleCode from "@components/docs/TitleCode";
 import DocsAd from "@components/docs/DocsAd";
+import Contributors from "@components/docs/Contributors";
 
-<PageTitle title="Deploying to Vercel" />
+<PageTitle title="Deployment to Vercel" />
 
 <Sidebar />
 <MDXDocs>
   <DocsAd />
-  # Deploying to Vercel
-  <Author author="Manu Anish" displayName="manuanish" date="24/5/22" />
-  <br />
+  # Deployment to Vercel
+  <Contributors contributors={["manuanish"]} readTime={5} />
+  ---
+  Because Bon5R is built using [Next.js](https://nextjs.org), Vercel makes it quite easy
+  to deploy a project with just a few clicks. To get deploy your project follow these steps:
+  <br/>
+  ### Create a Vercel Account
+  Before we begin, you must be have a vercel account. You can sign up here: https://vercel.com/signup
+
+{" "}
+
+<br />
+### Create a new project You can create a new Vercel project at: https://vercel.com/new
+
+{" "}
+
+<br />
+### Import your repository From here, you can import your repository from your GitHub
+account and vercel should begin to your application.
+
+#### Note:
+
+Your repository root directory serves as the link to the project e.g if it is `my-bon5r-app`, you can visit
+your application at `https://my-bon5r-app.vercel.app`
+
   <NextPage
     nextPage="Heroku"
     previousPage="Deployment Guides"
