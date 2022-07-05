@@ -22,7 +22,7 @@ export default function CopyCode() {
     <div className="realtive p-0 bg-slate-800 text-slate-300 rounded-md flex h-12 z-50">
       <pre
         className="m-4 mr-0 z-60 grow"
-        style={{ marginTop: 14, overflowY: "hidden" }}
+        style={{ marginTop: 14, overflow: "hidden" }}
       >
         <code>yarn create bon5r-app my-app</code>
       </pre>

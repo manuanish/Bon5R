@@ -132,7 +132,6 @@ As of right now, here is the current preview of the Bon5R template website.
 
 ![](public/docs/bon5r-dark.png)
 
-
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>

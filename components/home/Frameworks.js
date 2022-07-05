@@ -3,7 +3,7 @@ import { PlugIcon } from "@primer/octicons-react";
 export default function Frameworks() {
   return (
     <div className="z-50">
-      <div className="p-20 bg-transparent bg-gradient-to-t from-slate-900 via-slate-900 to-transparent w-full shadow-2xl">
+      <div className="sm:p-20 p-5 bg-transparent bg-gradient-to-t from-slate-900 via-slate-900 to-transparent w-full shadow-2xl">
         <div className="p-8 rounded-full mt-20 text-green-700 bg-green-400 w-fit mb-10 border-4 border-green-600">
           <PlugIcon size={30} />
         </div>
@@ -19,7 +19,7 @@ export default function Frameworks() {
         </p>
         <a
           className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-700 text-slate-100 hover:bg-slate-600 hover:text-white focus:ring-slate-500 mt-8"
-          href="/docs/getting-started/installation"
+          href="/docs/getting-started/"
         >
           Learn more<span className="sr-only"></span>
           <svg

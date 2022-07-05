@@ -25,7 +25,7 @@ export default function Home() {
         <div className="markdown-body"></div>
         <Header />
         <MainTitle />
-        <div className="flex flex-row text-white p-5 justify-around flex-col lg:flex-row w-full pb-0 overflow-hidden">
+        <div className="flex flex-row text-white p-0 sm:p-5 justify-around flex-col lg:flex-row w-full pb-0 overflow-hidden">
           <CodeEditor />
           <RenderedOutput />
         </div>
@@ -34,8 +34,6 @@ export default function Home() {
       <Frameworks />
       <Art1 />
       <Handcrafted />
-      <Art2 />
-      <ResponsiveDesign />
     </div>
   );
 }
